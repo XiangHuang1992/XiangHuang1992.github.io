@@ -5,8 +5,8 @@
 # Site
 title: ferdinad_hx's Blog
 subtitle: Get busy living, or get busy dying.
-description: Android,JAVA,Web开发,移动互联网，WebAPP，Python
-author: ferdinand_hx
+description: 我们终将失去我们生命中所爱之人，不然我们怎么知道他在我们生命中是多么重要呢？
+author: 新农民
 language: zh-Hans
 timezone: 
 
@@ -37,7 +37,7 @@ baidu_analytics: c1aefede32e9fe7912e89f75c45017c9
 
 disqus_shortname: huangxiang
 # JiaThis 分享服务
-jiathis: 
+jiathis: true
 # 配置站内搜索
 search:
   path: search.xml
@@ -53,6 +53,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+    - README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
