@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="ubuntu,root权限" />
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="ferdinad_hx&#39;s Blog">
-<meta property="og:url" content="http://www.huangxiang666.com/404.html">
+<meta name="description" content="由于博主刚刚接触linux，所以喜欢吓琢磨。现在记录一下在将普通用户提升为root用户时出现的问题">
+<meta name="keywords" content="ubuntu,root权限">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu下关于将普通用户权限提升为root的问题">
+<meta property="og:url" content="http://www.huangxiang666.com/2017-02-28/Ubuntu下关于将普通用户权限提升为root的问题.html">
 <meta property="og:site_name" content="ferdinad_hx&#39;s Blog">
+<meta property="og:description" content="由于博主刚刚接触linux，所以喜欢吓琢磨。现在记录一下在将普通用户提升为root用户时出现的问题">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-02-08T08:51:12.345Z">
+<meta property="og:updated_time" content="2017-02-28T08:21:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ferdinad_hx&#39;s Blog">
+<meta name="twitter:title" content="Ubuntu下关于将普通用户权限提升为root的问题">
+<meta name="twitter:description" content="由于博主刚刚接触linux，所以喜欢吓琢磨。现在记录一下在将普通用户提升为root用户时出现的问题">
 
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://www.huangxiang666.com/404.html"/>
+  <link rel="canonical" href="http://www.huangxiang666.com/2017-02-28/Ubuntu下关于将普通用户权限提升为root的问题.html"/>
 
 
 
 
 
-  <title> | ferdinad_hx's Blog</title>
+  <title>Ubuntu下关于将普通用户权限提升为root的问题 | ferdinad_hx's Blog</title>
   
 
 
@@ -321,48 +325,249 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.huangxiang666.com/2017-02-28/Ubuntu下关于将普通用户权限提升为root的问题.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ferdinand_hx">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ferdinad_hx's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h2 class="post-title" itemprop="name headline"></h2>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <!DOCTYPE HTML>
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8;">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="robots" content="all">
-  <meta name="robots" content="index,follow">
-</head>
-<body>
-
-<script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homepageurl="http://www.geekhuang.com " homepagename="回到我的主页">
-</script>
-
-</body>
-</html>
-
+          <h2 class="post-title" itemprop="name headline">Ubuntu下关于将普通用户权限提升为root的问题</h2>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-28T16:21:44+08:00">
+                2017-02-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/问题搜集整理/" itemprop="url" rel="index">
+                    <span itemprop="name">问题搜集整理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017-02-28/Ubuntu下关于将普通用户权限提升为root的问题.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017-02-28/Ubuntu下关于将普通用户权限提升为root的问题.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  <blockquote class="blockquote-center">由于博主刚刚接触linux，所以喜欢吓琢磨。现在记录一下在将普通用户提升为root用户时出现的问题 </blockquote>
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <a id="more"></a>
+<h3 id="问题的由来"><a href="#问题的由来" class="headerlink" title="问题的由来"></a>问题的由来</h3><ul>
+<li>博主一个好奇就想把自己的那个用户提升为root级别的，所以进行了如下操作。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">su</span><br><span class="line">vi etc/passwd</span><br><span class="line">然后将自己创建的那个用户（博主的用户名为lucas），对应的值</span><br><span class="line">lucas:x:1000:0:lucas,,,:/home/lucas:/bin/bash</span><br><span class="line">中的1000修改成了和root用户一样的0.</span><br><span class="line"></span><br><span class="line">好吧，这下lucas确实成了root用户了，但是问题就来了，你下次登录的适合界面上只剩下客人会话了。其它会话都没了。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="解决措施"><a href="#解决措施" class="headerlink" title="解决措施"></a>解决措施</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">在用户登录界面，按下 `ctrl+alt+f7`进入命令行界面。</span><br><span class="line">按照如下操作进行：</span><br><span class="line">输入用户名：lucas（博主的）</span><br><span class="line">输入密码：xxxxxx</span><br><span class="line">然后使用vi命令打开我们修改过的文件：/etc/passwd</span><br><span class="line">将0修改成原来的数值。这样我们的登录界面又会出现用户登录啦！</span><br><span class="line">好吧。。至此，问题解决。</span><br></pre></td></tr></table></figure>
+<p>PS：博主的Linux系统的Ubuntu kylin 15.10 的版本。具体的原因是ubuntu从12.04开始，添加了额外的root保护，不允许直接开启root账户，强制使账户改为root账户会被屏蔽。所以以后不能再继续作死了。老老实实的用sudo吧。%&gt;_&lt;%。</p>
+<p>记录时间：2015年12月10日19:05:05。下班吃饭。</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat.JPG" alt="ferdinand_hx 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.JPG" alt="ferdinand_hx 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ubuntu/" rel="tag"># ubuntu</a>
+          
+            <a href="/tags/root权限/" rel="tag"># root权限</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017-02-28/ubuntu下jdk环境变量配置.html" rel="next" title="Ubuntu下jdk环境变量的配置">
+                <i class="fa fa-chevron-left"></i> Ubuntu下jdk环境变量的配置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017-02-28/windows下的cmd神器-Cmder.html" rel="prev" title="windows下的cmd神器:Cmder介绍及其设置">
+                windows下的cmd神器:Cmder介绍及其设置 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
   </div>
 
 
@@ -405,8 +610,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -480,6 +694,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题的由来"><span class="nav-number">1.</span> <span class="nav-text">问题的由来</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决措施"><span class="nav-number">2.</span> <span class="nav-text">解决措施</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -644,9 +874,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://www.huangxiang666.com/404.html';
-          this.page.identifier = '404.html';
-          this.page.title = '';
+          this.page.url = 'http://www.huangxiang666.com/2017-02-28/Ubuntu下关于将普通用户权限提升为root的问题.html';
+          this.page.identifier = '2017-02-28/Ubuntu下关于将普通用户权限提升为root的问题.html';
+          this.page.title = 'Ubuntu下关于将普通用户权限提升为root的问题';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://huangxiang.disqus.com/embed.js';

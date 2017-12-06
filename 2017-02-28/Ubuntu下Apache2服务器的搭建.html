@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Apache2,ubuntu,ubuntu下搭建Apache2服务器" />
 
 
 
@@ -79,14 +79,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="ferdinad_hx&#39;s Blog">
-<meta property="og:url" content="http://www.huangxiang666.com/404.html">
+<meta name="description" content="刚接触服务器端的开发，今天上班头要求在unbuntu下先搭建一个服务器，于是乎，博主又开始摸索了。嗯～进入正题，楼主选择的是Apache服务器。楼主的系统版本是：Ubuntu Kylin 15.10.">
+<meta name="keywords" content="Apache2,ubuntu,ubuntu下搭建Apache2服务器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu下Apache2服务器的搭建">
+<meta property="og:url" content="http://www.huangxiang666.com/2017-02-28/Ubuntu下Apache2服务器的搭建.html">
 <meta property="og:site_name" content="ferdinad_hx&#39;s Blog">
+<meta property="og:description" content="刚接触服务器端的开发，今天上班头要求在unbuntu下先搭建一个服务器，于是乎，博主又开始摸索了。嗯～进入正题，楼主选择的是Apache服务器。楼主的系统版本是：Ubuntu Kylin 15.10.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-02-08T08:51:12.345Z">
+<meta property="og:image" content="http://7xt7l1.com1.z0.glb.clouddn.com/apache2%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87.jpg">
+<meta property="og:updated_time" content="2017-02-28T08:21:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ferdinad_hx&#39;s Blog">
+<meta name="twitter:title" content="Ubuntu下Apache2服务器的搭建">
+<meta name="twitter:description" content="刚接触服务器端的开发，今天上班头要求在unbuntu下先搭建一个服务器，于是乎，博主又开始摸索了。嗯～进入正题，楼主选择的是Apache服务器。楼主的系统版本是：Ubuntu Kylin 15.10.">
+<meta name="twitter:image" content="http://7xt7l1.com1.z0.glb.clouddn.com/apache2%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87.jpg">
 
 
 
@@ -116,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://www.huangxiang666.com/404.html"/>
+  <link rel="canonical" href="http://www.huangxiang666.com/2017-02-28/Ubuntu下Apache2服务器的搭建.html"/>
 
 
 
 
 
-  <title> | ferdinad_hx's Blog</title>
+  <title>Ubuntu下Apache2服务器的搭建 | ferdinad_hx's Blog</title>
   
 
 
@@ -321,48 +327,271 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.huangxiang666.com/2017-02-28/Ubuntu下Apache2服务器的搭建.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ferdinand_hx">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ferdinad_hx's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h2 class="post-title" itemprop="name headline"></h2>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <!DOCTYPE HTML>
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8;">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="robots" content="all">
-  <meta name="robots" content="index,follow">
-</head>
-<body>
-
-<script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homepageurl="http://www.geekhuang.com " homepagename="回到我的主页">
-</script>
-
-</body>
-</html>
-
+          <h2 class="post-title" itemprop="name headline">Ubuntu下Apache2服务器的搭建</h2>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-28T16:21:02+08:00">
+                2017-02-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/实用工具/" itemprop="url" rel="index">
+                    <span itemprop="name">实用工具</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017-02-28/Ubuntu下Apache2服务器的搭建.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017-02-28/Ubuntu下Apache2服务器的搭建.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  <blockquote class="blockquote-center">刚接触服务器端的开发，今天上班头要求在unbuntu下先搭建一个服务器，于是乎，博主又开始摸索了。嗯～进入正题，楼主选择的是Apache服务器。楼主的系统版本是：Ubuntu Kylin 15.10.</blockquote>
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <a id="more"></a>
+<h2 id="Apache服务器的下载与安装"><a href="#Apache服务器的下载与安装" class="headerlink" title="Apache服务器的下载与安装"></a>Apache服务器的下载与安装</h2><p>博主选择的是使用apt-get开发包打包的方式安装的。下面是安装步骤：</p>
+<ul>
+<li><p>安装apache，在命令行终端中输入以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install apache2</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果网络连接正常的话，应该是会顺利安装好的，在安装完成之后，需要重启apache服务，在命令行终端中输入如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ sudo /etc/init.d/apache2 restart</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">&gt;  如果重启之后出现如下提示，则表示服务器已经启动成功了。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>lucas@lucas-ThinkPad-PC:~$ sudo /etc/init.d/apache2 restart<br>[ ok ] Restarting apache2 (via systemctl): apache2.service.<br>```</p>
+<blockquote>
+<p>可能出现的问题1： NameVirtualHost * :80 has no VirtualHost.</p>
+<blockquote>
+<p>出现上述问题的原因：定义了多个NameVirtualHost，我们只需要将/etc/apahce2/ports.conf 中的NameVirtualHost * :80注释掉即可。</p>
+</blockquote>
+<p>可能出现的问题2： Could not reliably determine the server’s fully qualified domain name, using 127.0.1.1 for ServerName </p>
+<ol>
+<li>原因：根据提示，无法可靠的确定服务器的有效域名，使用127.0.1.1作为服务器域名。因此在下面的测试中，应该使用127.0.1.1，而不是127.0.0.1。</li>
+<li>解决方法：终端输入<code>vim /etc/apache2/httpd.conf</code>，在文件中添加ServerName localhost:80 ，再次restart apache2,就可以使用127.0.0.1来访问web服务器了。</li>
+</ol>
+</blockquote>
+<h2 id="Apache服务器的测试"><a href="#Apache服务器的测试" class="headerlink" title="Apache服务器的测试"></a>Apache服务器的测试</h2><p>既然已经安装好了，name我们当然应该测试一下了。</p>
+<p>在浏览器中输入<code>http://localhost</code>或者<code>http://127.0.0.1</code>，如果看到了It works，那么就说明服务器成功安装了。Apache的默认安装，会在<code>var/www/</code>的目录，这个就是我们的web目录了，所有需要能够浏览器访问的web文件都要放在这个目录里。</p>
+<p>下面是楼主的测试结果：<br><img src="http://7xt7l1.com1.z0.glb.clouddn.com/apache2%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87.jpg" alt="apahce服务器测试结果"></p>
+<p>PS:好了。至此Ubuntu下Apache服务器的安装就已经完成，下面的文章中，我将继续Apache服务器配置文件的详解。</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat.JPG" alt="ferdinand_hx 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.JPG" alt="ferdinand_hx 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Apache2/" rel="tag"># Apache2</a>
+          
+            <a href="/tags/服务器/" rel="tag"># 服务器</a>
+          
+            <a href="/tags/ubuntu/" rel="tag"># ubuntu</a>
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017-02-28/bower error.html" rel="next" title="Bower:Additional error details:Name must be lowercase, can contain digits, dots, dashes, "@" or spaces">
+                <i class="fa fa-chevron-left"></i> Bower:Additional error details:Name must be lowercase, can contain digits, dots, dashes, "@" or spaces
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017-02-28/ubuntu下jdk环境变量配置.html" rel="prev" title="Ubuntu下jdk环境变量的配置">
+                Ubuntu下jdk环境变量的配置 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
   </div>
 
 
@@ -405,8 +634,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -480,6 +718,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Apache服务器的下载与安装"><span class="nav-number">1.</span> <span class="nav-text">Apache服务器的下载与安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Apache服务器的测试"><span class="nav-number">2.</span> <span class="nav-text">Apache服务器的测试</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -644,9 +898,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://www.huangxiang666.com/404.html';
-          this.page.identifier = '404.html';
-          this.page.title = '';
+          this.page.url = 'http://www.huangxiang666.com/2017-02-28/Ubuntu下Apache2服务器的搭建.html';
+          this.page.identifier = '2017-02-28/Ubuntu下Apache2服务器的搭建.html';
+          this.page.title = 'Ubuntu下Apache2服务器的搭建';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://huangxiang.disqus.com/embed.js';
