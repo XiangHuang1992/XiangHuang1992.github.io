@@ -11,5 +11,6 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
+Sitemap: http://www.huangxiang666.com/search.xml
 Sitemap: http://www.huangxiang666.com/sitemap.xml
 Sitemap: http://www.huangxiang666.com/baidusitemap.xml
