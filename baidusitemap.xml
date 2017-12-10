@@ -3,12 +3,46 @@
 
 
     
+  <url>
+    <loc>http://www.huangxiang666.com/2017-02-28/Ubuntu%E4%B8%8B%E5%85%B3%E4%BA%8E%E5%B0%86%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87%E4%B8%BAroot%E7%9A%84%E9%97%AE%E9%A2%98.html</loc>
+    <lastmod>2017-12-10T17:38:05.884Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu下关于将普通用户权限提升为root的问题</title>
+        <pubTime>2017-02-28T08:21:44.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+        <tag>root权限</tag>
+         
+         
+           
+             
+              <breadCrumb title="问题搜集整理" url="http://www.huangxiang666.com/categories/%E9%97%AE%E9%A2%98%E6%90%9C%E9%9B%86%E6%95%B4%E7%90%86/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
-    
+  <url>
+    <loc>http://www.huangxiang666.com/2017-03-29/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.html</loc>
+    <lastmod>2017-12-10T17:35:18.295Z</lastmod>
+    <data>
+        <display>
+        <title>浏览器是如何工作的</title>
+        <pubTime>2017-03-29T03:10:38.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://www.huangxiang666.com/2017-03-22/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BB%8E%E8%AF%B7%E6%B1%82%E5%8F%91%E5%87%BA%E5%88%B0%E8%BF%94%E5%9B%9E%E7%BB%8F%E5%8E%86%E4%BA%86%E4%BB%80%E4%B9%88.html</loc>
-    <lastmod>2017-03-29T12:16:54.690Z</lastmod>
+    <lastmod>2017-12-10T17:35:00.519Z</lastmod>
     <data>
         <display>
         <title>浏览器从请求发出到返回经历了什么</title>
@@ -21,20 +55,8 @@
     </url>
 
     
-  <url>
-    <loc>http://www.huangxiang666.com/2017-03-29/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.html</loc>
-    <lastmod>2017-03-29T03:35:37.884Z</lastmod>
-    <data>
-        <display>
-        <title>浏览器是如何工作的</title>
-        <pubTime>2017-03-29T03:10:38.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
+    
+    
     
   <url>
     <loc>http://www.huangxiang666.com/2017-03-17/Hibernate%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89-ORM-%E6%A6%82%E8%BF%B0.html</loc>
@@ -55,36 +77,6 @@
              
               <breadCrumb title="Hibernate" url="http://www.huangxiang666.com/categories/Hibernate/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huangxiang666.com/2017-03-17/Hibernate%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89-%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6%E5%92%8C%E6%98%A0%E5%B0%84%E7%B1%BB%E5%9E%8B.html</loc>
-    <lastmod>2017-03-17T09:55:04.235Z</lastmod>
-    <data>
-        <display>
-        <title>Hibernate学习教程（四）----映射文件和映射类型</title>
-        <pubTime>2017-03-17T09:55:04.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huangxiang666.com/2017-03-17/Hibernate%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89-Sessions.html</loc>
-    <lastmod>2017-03-17T09:53:56.702Z</lastmod>
-    <data>
-        <display>
-        <title>Hibernate学习教程（三）----Sessions</title>
-        <pubTime>2017-03-17T09:53:56.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
@@ -196,28 +188,6 @@
            
              
               <breadCrumb title="常用工具" url="http://www.huangxiang666.com/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huangxiang666.com/2017-02-28/Ubuntu%E4%B8%8B%E5%85%B3%E4%BA%8E%E5%B0%86%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87%E4%B8%BAroot%E7%9A%84%E9%97%AE%E9%A2%98.html</loc>
-    <lastmod>2017-02-28T08:21:44.000Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu下关于将普通用户权限提升为root的问题</title>
-        <pubTime>2017-02-28T08:21:44.000Z</pubTime>
-        
-        <tag>ubuntu</tag>
-         
-        <tag>root权限</tag>
-         
-         
-           
-             
-              <breadCrumb title="问题搜集整理" url="http://www.huangxiang666.com/categories/%E9%97%AE%E9%A2%98%E6%90%9C%E9%9B%86%E6%95%B4%E7%90%86/"/>
           
         </display>
     </data>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.huangxiang666.com/"/>
-  <updated>2017-03-29T03:35:37.884Z</updated>
+  <updated>2017-12-10T17:35:18.295Z</updated>
   <id>http://www.huangxiang666.com/</id>
   
   <author>
@@ -21,13 +21,18 @@
     <link href="http://www.huangxiang666.com/2017-03-29/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.html"/>
     <id>http://www.huangxiang666.com/2017-03-29/浏览器是如何工作的.html</id>
     <published>2017-03-29T03:10:38.000Z</published>
-    <updated>2017-03-29T03:35:37.884Z</updated>
+    <updated>2017-12-10T17:35:18.295Z</updated>
     
     <content type="html"><![CDATA[<h2 id="why？"><a href="#why？" class="headerlink" title="why？"></a>why？</h2><ul><li>Web浏览器是世界上使用最广泛的软件。</li><li>浏览器提供web资源并创建可以允许web应用程序的沙箱环境。</li><li>浏览器实现这一点的方式非常复杂，并且由许多不同的标准决定。</li><li>浏览器的一些机制其实是具有着欺骗性和反直觉性。</li><li>了解浏览器的工作原理为我们提高网站/网页类应用程序的效率和代码的组织结构提供了理论依据。</li></ul><h2 id="复杂"><a href="#复杂" class="headerlink" title="复杂"></a>复杂</h2><ul><li>这里无法讲解浏览器工作原理的所有细节。</li><li>每个浏览器都有自己的实现方式。</li></ul><h2 id="一般和模块化的方法"><a href="#一般和模块化的方法" class="headerlink" title="一般和模块化的方法"></a>一般和模块化的方法</h2><ul><li>浏览器遵循相同的标准</li><li>大多数浏览器有着相同的总体结构和同样的模块</li></ul><p><strong>本文将讨论这些共同行为。</strong></p><h2 id="浏览器的两个主要模块"><a href="#浏览器的两个主要模块" class="headerlink" title="浏览器的两个主要模块"></a>浏览器的两个主要模块</h2><ul><li>渲染引擎（也成为布局引擎）</li><li>Javascript解释器</li></ul><h3 id="不同浏览器使用的渲染引擎不一样"><a href="#不同浏览器使用的渲染引擎不一样" class="headerlink" title="不同浏览器使用的渲染引擎不一样"></a>不同浏览器使用的渲染引擎不一样</h3><ul><li>Mozilla Firefox 使用 <code>Gecko</code></li><li>Safari 和 Google Chrome（version 27之前）使用<code>Webkit</code>。</li><li>Chrome使用<code>Blink</code>在version 27之后</li></ul><h3 id="一个web页面的组成"><a href="#一个web页面的组成" class="headerlink" title="一个web页面的组成"></a>一个web页面的组成</h3><ul><li>HTML：应用程序的内容</li><li>CSS： 内容的样式</li><li>Javascript： 应用程序的逻辑部分，有时也是一些动画(animations)等等。</li><li>其它</li></ul><h3 id="渲染引擎（rendering-engine）的工作"><a href="#渲染引擎（rendering-engine）的工作" class="headerlink" title="渲染引擎（rendering engine）的工作"></a>渲染引擎（rendering engine）的工作</h3><p>从HTML,CSS,JS开始，将网页呈现在用户屏幕上，大概需要经过四个阶段：</p><ol><li>处理HTML构建DOM，处理CSS构建CSSOM</li><li>将DOM和CSSOM合并到一个渲染树中</li><li>布局渲染树（render tree）,通过几何计算</li></ol>]]></content>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;/blockquote&gt;
+      
+      
+        &lt;h2 id=&quot;why？&quot;&gt;&lt;a href=&quot;#why？&quot; class=&quot;headerlink&quot; title=&quot;why？&quot;&gt;&lt;/a&gt;why？&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Web浏览器是世界上使用最广泛的软件。&lt;/li&gt;
+&lt;li&gt;浏览器提供web资源并创建可以允许web应用程序的沙箱
+      
     
     </summary>
     
@@ -39,45 +44,16 @@
     <link href="http://www.huangxiang666.com/2017-03-22/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BB%8E%E8%AF%B7%E6%B1%82%E5%8F%91%E5%87%BA%E5%88%B0%E8%BF%94%E5%9B%9E%E7%BB%8F%E5%8E%86%E4%BA%86%E4%BB%80%E4%B9%88.html"/>
     <id>http://www.huangxiang666.com/2017-03-22/浏览器从请求发出到返回经历了什么.html</id>
     <published>2017-03-22T03:11:07.000Z</published>
-    <updated>2017-03-29T12:16:54.690Z</updated>
+    <updated>2017-12-10T17:35:00.519Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下："><a href="#一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下：" class="headerlink" title="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下："></a>一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下：</h2><ol><li>浏览器检查缓存，如果请求的对象在缓存中并且是新的，跳到步骤9。</li><li>浏览器从OS获取服务器的ip地址。</li><li>OS进行DNS查找，并将IP地址返回给浏览器。</li><li>浏览器打开到服务器的TCP连接（如果是https则步骤更复杂点,后面再分析）。</li><li>浏览器通过TCP连接发送HTTP请求。</li><li>浏览器接受http响应，并可能关闭TCP连接或将其重新用于另一个请求。</li><li>浏览器检查响应是重定向还是条件响应（3xx的状态码）,授权请求（401），错误（4xx或5xx）等。这些与正常响应（2xx）的处理方式不同。</li><li>如果允许缓存，响应将存储在缓存中。</li><li>浏览器解码响应（比如响应是gzip的需要解压缩）</li><li>浏览器决定如何处理响应（它可能是一个HTML页面，可能是一张图片，也可能是一个声音片段）。</li><li>浏览器渲染响应，或者提示无法识别的类型弹出框警告。</li><li></li></ol>]]></content>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hibernate学习教程（四）----映射文件和映射类型</title>
-    <link href="http://www.huangxiang666.com/2017-03-17/Hibernate%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89-%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6%E5%92%8C%E6%98%A0%E5%B0%84%E7%B1%BB%E5%9E%8B.html"/>
-    <id>http://www.huangxiang666.com/2017-03-17/Hibernate学习教程（四）-映射文件和映射类型.html</id>
-    <published>2017-03-17T09:55:04.000Z</published>
-    <updated>2017-03-17T09:55:04.235Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hibernate学习教程（三）----Sessions</title>
-    <link href="http://www.huangxiang666.com/2017-03-17/Hibernate%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89-Sessions.html"/>
-    <id>http://www.huangxiang666.com/2017-03-17/Hibernate学习教程（三）-Sessions.html</id>
-    <published>2017-03-17T09:53:56.000Z</published>
-    <updated>2017-03-17T09:53:56.702Z</updated>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;/blockquote&gt;
+      
+      
+        &lt;h2 id=&quot;一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下：&quot;&gt;&lt;a href=&quot;#一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下：&quot; class=&quot;headerlink&quot; title=&quot;一个最简单的http请求，没
+      
     
     </summary>
     
@@ -191,13 +167,13 @@
     <link href="http://www.huangxiang666.com/2017-02-28/Ubuntu%E4%B8%8B%E5%85%B3%E4%BA%8E%E5%B0%86%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87%E4%B8%BAroot%E7%9A%84%E9%97%AE%E9%A2%98.html"/>
     <id>http://www.huangxiang666.com/2017-02-28/Ubuntu下关于将普通用户权限提升为root的问题.html</id>
     <published>2017-02-28T08:21:44.000Z</published>
-    <updated>2017-02-28T08:21:44.000Z</updated>
+    <updated>2017-12-10T17:38:05.884Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a><h3 id="问题的由来"><a href="#问题的由来" class="headerlink" title="问题的由来"></a>问题的由来</h3><ul><li>博主一个好奇就想把自己的那个用户提升为root级别的，所以进行了如下操作。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">su</span><br><span class="line">vi etc/passwd</span><br><span class="line">然后将自己创建的那个用户（博主的用户名为lucas），对应的值</span><br><span class="line">lucas:x:1000:0:lucas,,,:/home/lucas:/bin/bash</span><br><span class="line">中的1000修改成了和root用户一样的0.</span><br><span class="line"></span><br><span class="line">好吧，这下lucas确实成了root用户了，但是问题就来了，你下次登录的适合界面上只剩下客人会话了。其它会话都没了。</span><br></pre></td></tr></table></figure></li></ul><h3 id="解决措施"><a href="#解决措施" class="headerlink" title="解决措施"></a>解决措施</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">在用户登录界面，按下 `ctrl+alt+f7`进入命令行界面。</span><br><span class="line">按照如下操作进行：</span><br><span class="line">输入用户名：lucas（博主的）</span><br><span class="line">输入密码：xxxxxx</span><br><span class="line">然后使用vi命令打开我们修改过的文件：/etc/passwd</span><br><span class="line">将0修改成原来的数值。这样我们的登录界面又会出现用户登录啦！</span><br><span class="line">好吧。。至此，问题解决。</span><br></pre></td></tr></table></figure><p>PS：博主的Linux系统的Ubuntu kylin 15.10 的版本。具体的原因是ubuntu从12.04开始，添加了额外的root保护，不允许直接开启root账户，强制使账户改为root账户会被屏蔽。所以以后不能再继续作死了。老老实实的用sudo吧。%&gt;_&lt;%。</p><p>记录时间：2015年12月10日19:05:05。下班吃饭。</p>]]></content>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;由于博主刚刚接触linux，所以喜欢吓琢磨。现在记录一下在将普通用户提升为root用户时出现的问题 &lt;/blockquote&gt;
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;由于博主刚刚接触linux，所以喜欢瞎琢磨。现在记录一下在将普通用户提升为root用户时出现的问题 &lt;/blockquote&gt;
     
     </summary>
     
