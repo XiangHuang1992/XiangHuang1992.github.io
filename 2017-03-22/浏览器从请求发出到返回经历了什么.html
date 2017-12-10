@@ -85,17 +85,17 @@
 
 
 
-<meta name="description" content="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下： 浏览器检查缓存，如果请求的对象在缓存中并且是新的，跳到步骤9。 浏览器从OS获取服务器的ip地址。 OS进行DNS查找，并将IP地址返回给浏览器。 浏览器打开到服务器的TCP连接（如果是https则步骤更复杂点,后面再分析）。 浏览器通过T">
+<meta name="description" content="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下： 浏览器检查缓存，如果请求的对象在缓存中并且是新的，跳到步骤9。 浏览器从OS获取服务器的ip地址。 OS进行DNS查找，并将IP地址返回给浏览器。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浏览器从请求发出到返回经历了什么">
 <meta property="og:url" content="http://www.huangxiang666.com/2017-03-22/浏览器从请求发出到返回经历了什么.html">
 <meta property="og:site_name" content="ferdinad_hx&#39;s Blog">
-<meta property="og:description" content="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下： 浏览器检查缓存，如果请求的对象在缓存中并且是新的，跳到步骤9。 浏览器从OS获取服务器的ip地址。 OS进行DNS查找，并将IP地址返回给浏览器。 浏览器打开到服务器的TCP连接（如果是https则步骤更复杂点,后面再分析）。 浏览器通过TCP连接发送HTTP请求。 浏览器接受http响应，并可能关闭TCP连接或将其重">
+<meta property="og:description" content="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下： 浏览器检查缓存，如果请求的对象在缓存中并且是新的，跳到步骤9。 浏览器从OS获取服务器的ip地址。 OS进行DNS查找，并将IP地址返回给浏览器。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-10T17:35:00.519Z">
+<meta property="og:updated_time" content="2017-12-10T17:42:04.838Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浏览器从请求发出到返回经历了什么">
-<meta name="twitter:description" content="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下： 浏览器检查缓存，如果请求的对象在缓存中并且是新的，跳到步骤9。 浏览器从OS获取服务器的ip地址。 OS进行DNS查找，并将IP地址返回给浏览器。 浏览器打开到服务器的TCP连接（如果是https则步骤更复杂点,后面再分析）。 浏览器通过TCP连接发送HTTP请求。 浏览器接受http响应，并可能关闭TCP连接或将其重">
+<meta name="twitter:description" content="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下： 浏览器检查缓存，如果请求的对象在缓存中并且是新的，跳到步骤9。 浏览器从OS获取服务器的ip地址。 OS进行DNS查找，并将IP地址返回给浏览器。">
 
 
 
@@ -418,7 +418,7 @@
         <h2 id="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下："><a href="#一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下：" class="headerlink" title="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下："></a>一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下：</h2><ol>
 <li>浏览器检查缓存，如果请求的对象在缓存中并且是新的，跳到步骤9。</li>
 <li>浏览器从OS获取服务器的ip地址。</li>
-<li>OS进行DNS查找，并将IP地址返回给浏览器。</li>
+<li>OS进行DNS查找，并将IP地址返回给浏览器。<a id="more"></a></li>
 <li>浏览器打开到服务器的TCP连接（如果是https则步骤更复杂点,后面再分析）。</li>
 <li>浏览器通过TCP连接发送HTTP请求。</li>
 <li>浏览器接受http响应，并可能关闭TCP连接或将其重新用于另一个请求。</li>

@@ -413,46 +413,20 @@
 
       
         
-          
-            <h2 id="why？"><a href="#why？" class="headerlink" title="why？"></a>why？</h2><ul>
+          <h2 id="why？"><a href="#why？" class="headerlink" title="why？"></a>why？</h2><ul>
 <li>Web浏览器是世界上使用最广泛的软件。</li>
 <li>浏览器提供web资源并创建可以允许web应用程序的沙箱环境。</li>
 <li>浏览器实现这一点的方式非常复杂，并且由许多不同的标准决定。</li>
 <li>浏览器的一些机制其实是具有着欺骗性和反直觉性。</li>
 <li>了解浏览器的工作原理为我们提高网站/网页类应用程序的效率和代码的组织结构提供了理论依据。</li>
 </ul>
-<h2 id="复杂"><a href="#复杂" class="headerlink" title="复杂"></a>复杂</h2><ul>
-<li>这里无法讲解浏览器工作原理的所有细节。</li>
-<li>每个浏览器都有自己的实现方式。</li>
-</ul>
-<h2 id="一般和模块化的方法"><a href="#一般和模块化的方法" class="headerlink" title="一般和模块化的方法"></a>一般和模块化的方法</h2><ul>
-<li>浏览器遵循相同的标准</li>
-<li>大多数浏览器有着相同的总体结构和同样的模块</li>
-</ul>
-<p><strong>本文将讨论这些共同行为。</strong></p>
-<h2 id="浏览器的两个主要模块"><a href="#浏览器的两个主要模块" class="headerlink" title="浏览器的两个主要模块"></a>浏览器的两个主要模块</h2><ul>
-<li>渲染引擎（也成为布局引擎）</li>
-<li>Javascript解释器</li>
-</ul>
-<h3 id="不同浏览器使用的渲染引擎不一样"><a href="#不同浏览器使用的渲染引擎不一样" class="headerlink" title="不同浏览器使用的渲染引擎不一样"></a>不同浏览器使用的渲染引擎不一样</h3><ul>
-<li>Mozilla Firefox 使用 <code>Gecko</code></li>
-<li>Safari 和 Google Chrome（version 27之前）使用<code>Webkit</code>。</li>
-<li>Chrome使用<code>Blink</code>在version 27之后</li>
-</ul>
-<h3 id="一个web页面的组成"><a href="#一个web页面的组成" class="headerlink" title="一个web页面的组成"></a>一个web页面的组成</h3><ul>
-<li>HTML：应用程序的内容</li>
-<li>CSS： 内容的样式</li>
-<li>Javascript： 应用程序的逻辑部分，有时也是一些动画(animations)等等。</li>
-<li>其它</li>
-</ul>
-<h3 id="渲染引擎（rendering-engine）的工作"><a href="#渲染引擎（rendering-engine）的工作" class="headerlink" title="渲染引擎（rendering engine）的工作"></a>渲染引擎（rendering engine）的工作</h3><p>从HTML,CSS,JS开始，将网页呈现在用户屏幕上，大概需要经过四个阶段：</p>
-<ol>
-<li>处理HTML构建DOM，处理CSS构建CSSOM</li>
-<li>将DOM和CSSOM合并到一个渲染树中</li>
-<li>布局渲染树（render tree）,通过几何计算</li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017-03-29/浏览器是如何工作的.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -612,23 +586,17 @@
 
       
         
-          
-            <h2 id="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下："><a href="#一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下：" class="headerlink" title="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下："></a>一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下：</h2><ol>
+          <h2 id="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下："><a href="#一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下：" class="headerlink" title="一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下："></a>一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下：</h2><ol>
 <li>浏览器检查缓存，如果请求的对象在缓存中并且是新的，跳到步骤9。</li>
 <li>浏览器从OS获取服务器的ip地址。</li>
-<li>OS进行DNS查找，并将IP地址返回给浏览器。</li>
-<li>浏览器打开到服务器的TCP连接（如果是https则步骤更复杂点,后面再分析）。</li>
-<li>浏览器通过TCP连接发送HTTP请求。</li>
-<li>浏览器接受http响应，并可能关闭TCP连接或将其重新用于另一个请求。</li>
-<li>浏览器检查响应是重定向还是条件响应（3xx的状态码）,授权请求（401），错误（4xx或5xx）等。这些与正常响应（2xx）的处理方式不同。</li>
-<li>如果允许缓存，响应将存储在缓存中。</li>
-<li>浏览器解码响应（比如响应是gzip的需要解压缩）</li>
-<li>浏览器决定如何处理响应（它可能是一个HTML页面，可能是一张图片，也可能是一个声音片段）。</li>
-<li>浏览器渲染响应，或者提示无法识别的类型弹出框警告。</li>
-<li></li>
-</ol>
-
-          
+<li>OS进行DNS查找，并将IP地址返回给浏览器。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017-03-22/浏览器从请求发出到返回经历了什么.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
