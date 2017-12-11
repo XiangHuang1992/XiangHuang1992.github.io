@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Ubuntu下关于将普通用户权限提升为root的问题]]></title>
+    <url>%2F2017-12-11%2FUbuntu%E4%B8%8B%E5%85%B3%E4%BA%8E%E5%B0%86%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87%E4%B8%BAroot%E7%9A%84%E9%97%AE%E9%A2%98.html</url>
+    <content type="text"><![CDATA[问题的由来 博主一个好奇就想把自己的那个用户提升为root级别的，所以进行了如下操作。1234567suvi etc/passwd然后将自己创建的那个用户（博主的用户名为lucas），对应的值lucas:x:1000:0:lucas,,,:/home/lucas:/bin/bash中的1000修改成了和root用户一样的0.好吧，这下lucas确实成了root用户了，但是问题就来了，你下次登录的适合界面上只剩下客人会话了。其它会话都没了。 解决措施1234567在用户登录界面，按下 `ctrl+alt+f7`进入命令行界面。按照如下操作进行：输入用户名：lucas（博主的）输入密码：xxxxxx然后使用vi命令打开我们修改过的文件：/etc/passwd将0修改成原来的数值。这样我们的登录界面又会出现用户登录啦！好吧。。至此，问题解决。 PS：博主的Linux系统的Ubuntu kylin 15.10 的版本。具体的原因是ubuntu从12.04开始，添加了额外的root保护，不允许直接开启root账户，强制使账户改为root账户会被屏蔽。所以以后不能再继续作死了。老老实实的用sudo吧。%&gt;_&lt;%。 记录时间：2015年12月10日19:05:05。下班吃饭。]]></content>
+      <categories>
+        <category>问题搜集整理</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>root权限</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[浏览器是如何工作的]]></title>
     <url>%2F2017-03-29%2F%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.html</url>
     <content type="text"><![CDATA[why？ Web浏览器是世界上使用最广泛的软件。 浏览器提供web资源并创建可以允许web应用程序的沙箱环境。 浏览器实现这一点的方式非常复杂，并且由许多不同的标准决定。 浏览器的一些机制其实是具有着欺骗性和反直觉性。 了解浏览器的工作原理为我们提高网站/网页类应用程序的效率和代码的组织结构提供了理论依据。 复杂 这里无法讲解浏览器工作原理的所有细节。 每个浏览器都有自己的实现方式。 一般和模块化的方法 浏览器遵循相同的标准 大多数浏览器有着相同的总体结构和同样的模块 本文将讨论这些共同行为。 浏览器的两个主要模块 渲染引擎（也成为布局引擎） Javascript解释器 不同浏览器使用的渲染引擎不一样 Mozilla Firefox 使用 Gecko Safari 和 Google Chrome（version 27之前）使用Webkit。 Chrome使用Blink在version 27之后 一个web页面的组成 HTML：应用程序的内容 CSS： 内容的样式 Javascript： 应用程序的逻辑部分，有时也是一些动画(animations)等等。 其它 渲染引擎（rendering engine）的工作从HTML,CSS,JS开始，将网页呈现在用户屏幕上，大概需要经过四个阶段： 处理HTML构建DOM，处理CSS构建CSSOM 将DOM和CSSOM合并到一个渲染树中 布局渲染树（render tree）,通过几何计算]]></content>
@@ -11,6 +23,16 @@
     <content type="text"><![CDATA[一个最简单的http请求，没有代理，ipv4和以下任何步骤都没有问题的情况下： 浏览器检查缓存，如果请求的对象在缓存中并且是新的，跳到步骤9。 浏览器从OS获取服务器的ip地址。 OS进行DNS查找，并将IP地址返回给浏览器。 浏览器打开到服务器的TCP连接（如果是https则步骤更复杂点,后面再分析）。 浏览器通过TCP连接发送HTTP请求。 浏览器接受http响应，并可能关闭TCP连接或将其重新用于另一个请求。 浏览器检查响应是重定向还是条件响应（3xx的状态码）,授权请求（401），错误（4xx或5xx）等。这些与正常响应（2xx）的处理方式不同。 如果允许缓存，响应将存储在缓存中。 浏览器解码响应（比如响应是gzip的需要解压缩） 浏览器决定如何处理响应（它可能是一个HTML页面，可能是一张图片，也可能是一个声音片段）。 浏览器渲染响应，或者提示无法识别的类型弹出框警告。]]></content>
   </entry>
   <entry>
+    <title><![CDATA[Hibernate学习教程（四）----映射文件和映射类型]]></title>
+    <url>%2F2017-03-17%2FHibernate%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B%EF%BC%88%E5%9B%9B%EF%BC%89-%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6%E5%92%8C%E6%98%A0%E5%B0%84%E7%B1%BB%E5%9E%8B.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hibernate学习教程（三）----Sessions]]></title>
+    <url>%2F2017-03-17%2FHibernate%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%89%EF%BC%89-Sessions.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hibernate学习教程（二）----ORM 概述]]></title>
     <url>%2F2017-03-17%2FHibernate%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89-ORM-%E6%A6%82%E8%BF%B0.html</url>
     <content type="text"><![CDATA[什么是JDBC JDBC:Java Database Connectivity，提供一组Java API，用于java程序中访问关系数据库。通过这些API，Java程序能够执行SQL语句并与任何SQL兼容的数据库进行交互。 JDBC提供了一种灵活的架构，可以编写一个独立于数据库的应用程序，该应用程序可以在不同的平台上并与不同的DBMS进行修改。 JDBC的优点和缺点 优点 缺点 简洁的SQL处理 用于大型应用程序时比较复杂 处理大量数据有着良好的性能 资源占用开销比较大 非常适用于小型应用程序 没有进行封装抽象 语法简单，学习成本较低 很难用于MVC模式开发 只能用于DBMS查询 为什么要进行ORM关系映射(Object Relational Mapping)当我们使用面向对象的系统时，对象模型与关系数据库之间存在不匹配。RDBMS以表格形式表示数据，而面向对象的语言（如Java和C#）将其表现为对象的互联图。如下所示： 12345678910111213141516171819202122232425public class Employee &#123; private int id; private String first_name; private String last_name; private int salary; public Employee() &#123;&#125; public Employee(String fname, String lname, int salary) &#123; this.first_name = fname; this.last_name = lname; this.salary = salary; &#125; public int getId() &#123; return id; &#125; public String getFirstName() &#123; return first_name; &#125; public String getLastName() &#123; return last_name; &#125; public int getSalary() &#123; return salary; &#125;&#125; 上面的对象需要被存储和检索到下面的RDBMS表： 1234567create table EMPLOYEE ( id INT NOT NULL auto_increment, first_name VARCHAR(20) default NULL, last_name VARCHAR(20) default NULL, salary INT default NULL, PRIMARY KEY (id)); 那么就会存在以下两个问题： 如果我们需要在开发了几个页面之后或在应用程序中修改数据库的设计时，应该怎么处理？ 在关系数据库加载和存储对象会暴露以下不匹配问题： 不匹配问题 描述 Granularity（粒度） 有时，您将有一个对象模型，它具有比数据库中对应表数量更多的类。 Inheritance（继承） RDBMS不定义类似于继承的任何东西，它是面向对象编程语言中的自然范例。 Identity（对象同一性） RDBMS正好定义了“同一性”的一个概念：主键。然而，Java定义了对象标识（a == b）和对象相等（a.equals（b）） Associations 面向对象语言使用对象引用表示Associations，RDBMS使用外键列表示 Navigation 在Java和RDBMS中访问对象的方式是完全不同的 对象关系映射（ORM）是处理所有上述不匹配问题的解决方案。 粒度问题 粒度：是指你正在使用的类型的大小。 继承（子类型问题） 在Java中，使用超类(superclass)和子类(subclass)来实现继承模型。 在Java中，继承是类型继承(type Inheritance)，而数据库表并不是一种类型。 数据库产品一般不实现类型或者表继承。而且即使实现了，我们也会遇到数据完整性的问题（对可更新视图的有限完整性规则）。 一旦把继承进入到模型当中，就有了多态(polymorphism)的可能。SQL数据库缺乏一种明显的表示多态关联的方式，一个外键约束精确的引用一张目标表，定义一个引用多表的外键并不容易。必须编写一个程序化的约束来加强这种完整性规则。 子类型的这种不匹配的结果是：模型中的继承结构必须在一个不提供继承策略的SQL数据库中被持久化。 对象同一性如果当我们需要检查两个对象是否为同一个对象的时候。解决方法有三种： 在java中： 对象同一性（粗略等同于内存位置，用a==b检查） 等同性，通过equals()方法（也成为值等同）的实现来确定。 数据库的同一性用主键值来表达。如果使用java中的方法来判断，那么主键值必然会不相等。 什么是ORM ORM（对象关系映射），是一种用于关系数据库和面向对象编程语言（如Java、C#）之间转换数据的编程技术。相对于JDBC，ORM具有以下优点： 序号 优点 1 允许业务逻辑代码访问对象而不是数据库表 2 从面向对象的角度考虑隐藏SQL查询的详细信息 3 底层基于JDBC 4 无需处理数据库实现 5 基于业务概念而不是数据库结构的实体 6 事务管理和秘钥自动生成 7 应用快速开发 ORM解决方案由以下四个模块组成： 序号 解决方案 1 用于对持久化类的对象进行基本CRUD操作的API 2 用于指定引用类的类和属性的查询的语言或API 3 用于指定映射元数据的可配置工具 4 用于实现ORM的一项技术，与事务对象交互，执行脏检查、延迟关联抓取以及其它优化功能 Java中的ORM框架Java中有几个持久化框架和ORM选项。持久化框架是一种将对象存储和检索到关系数据库中的ORM服务。 Enterprise JavaBeans Entity Beans Java Data Objects Castor TopLink Spring DAO Hibernate ……. etc. ORM和Hibernate的一些好处生产力与持久化相关的代码可能会是java中最冗长的一部分代码，Hibernate除去了许多琐碎的工作，让我们可以把更多的精力集中于业务问题的处理上。无论我们喜欢哪一种应用程序开发策略——自上而下，从一个领域模型开始；或者自底而上，从一个现有的数据库Schema开始——Hibernate与适当的工具一起使用，将明显减少开发时间。 可维护性更少的代码行使得系统更易于理解，因为它强调业务逻辑甚于那些费力的基础性工作。更重要的是，系统包含的代码越少则越利于重构。自动的对象/关系持久化充分减少了代码行。 Hibernate更易于维护还有其它原因，在手工编码的持久化系统中，关系表示法和对象模型实现领域之间存在一种必然的压力。改变一个，通常都要改变另一个，并且一个表示法设计通常需要妥协以便适应另一个的存在。ORM提供了两个模型之间的一个缓冲，允许面向对象在Java方面进行更优雅的利用，并且每个模型的微小变化都不会传递到另一个模型。 性能手工编码的持久化和自动的持久化相比总是可以一样快，并且经常更快。这是事实。但是在实际开发中，会受到时间和预算的约束。 在有限时间的项目中，手工编码的持久化通常允许你进行一些优化；Hibernate始终允许使用更多的优化。 自动的持久化能够大大提高开发人员的工作效率，使得开发人员能够花更多的时间对其它少数瓶颈进行手工优化。 实现ORM框架的人，可能在性能优化方面比我们做的更好。 供应商独立性ORM从底层的SQL数据库和SQL方言中把应用程序抽象出来。如果这个工具支持不同的数据库，这会给我们的应用程序带来一定程度的可移植性。可以帮我们减少一些被供应商锁定的风险。 数据库的独立性使得我们可以在开发时选择一些轻量级的数据库，在部署时，将实际的产品部署在不同的数据库上。]]></content>
@@ -18,9 +40,9 @@
         <category>Hibernate</category>
       </categories>
       <tags>
-        <tag>Hibernate</tag>
         <tag>ORM框架</tag>
         <tag>javaweb</tag>
+        <tag>Hibernate</tag>
       </tags>
   </entry>
   <entry>
@@ -31,9 +53,9 @@
         <category>Hibernate</category>
       </categories>
       <tags>
+        <tag>hibernate</tag>
         <tag>ORM框架</tag>
         <tag>javaweb</tag>
-        <tag>hibernate</tag>
       </tags>
   </entry>
   <entry>
@@ -62,18 +84,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Ubuntu下关于将普通用户权限提升为root的问题]]></title>
-    <url>%2F2017-02-28%2FUbuntu%E4%B8%8B%E5%85%B3%E4%BA%8E%E5%B0%86%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87%E4%B8%BAroot%E7%9A%84%E9%97%AE%E9%A2%98.html</url>
-    <content type="text"><![CDATA[问题的由来 博主一个好奇就想把自己的那个用户提升为root级别的，所以进行了如下操作。1234567suvi etc/passwd然后将自己创建的那个用户（博主的用户名为lucas），对应的值lucas:x:1000:0:lucas,,,:/home/lucas:/bin/bash中的1000修改成了和root用户一样的0.好吧，这下lucas确实成了root用户了，但是问题就来了，你下次登录的适合界面上只剩下客人会话了。其它会话都没了。 解决措施1234567在用户登录界面，按下 `ctrl+alt+f7`进入命令行界面。按照如下操作进行：输入用户名：lucas（博主的）输入密码：xxxxxx然后使用vi命令打开我们修改过的文件：/etc/passwd将0修改成原来的数值。这样我们的登录界面又会出现用户登录啦！好吧。。至此，问题解决。 PS：博主的Linux系统的Ubuntu kylin 15.10 的版本。具体的原因是ubuntu从12.04开始，添加了额外的root保护，不允许直接开启root账户，强制使账户改为root账户会被屏蔽。所以以后不能再继续作死了。老老实实的用sudo吧。%&gt;_&lt;%。 记录时间：2015年12月10日19:05:05。下班吃饭。]]></content>
-      <categories>
-        <category>问题搜集整理</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-        <tag>root权限</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Ubuntu下jdk环境变量的配置]]></title>
     <url>%2F2017-02-28%2Fubuntu%E4%B8%8Bjdk%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</url>
     <content type="text"><![CDATA[Linux下jdk环境变量的配置PS:博主的系统版本是 ubuntu kylin 15.10。 下载、及安装 下载:http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html 下载完成之后就是解压了： 进入到文件目录下执行该指令sudo tar zxvf ./jdk-8u65-linux-x64.tar.gz 安装完成之后就是配置环境变量啦2.1 打开/etc/profile文件：sudo gedit /etc/profile2.2 添加如下环境变量123456789#set java environment export JAVA_HOME=/usr/local/java/jdk版本 export JRE_HOME=/usr/local/java/jdk版本/jre export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$JAVA_HOME:$PATH 2.3 使得修改生效：一种是使用重启的方式使得修改生效，另一种则是使用source /etc/profile也可以使修改生效。 输入java -version测试是否配置成功。3.1 出现以下代码表示配置成功： 1234lucas@lucas-ThinkPad-PC:~/java$ java -versionjava version &quot;1.8.0_65&quot;Java(TM) SE Runtime Environment (build 1.8.0_65-b17)Java HotSpot(TM) 64-Bit Server VM (build 25.65-b01, mixed mode) 3.2 如出现如下代码：1234567程序 &apos;java&apos; 已包含在下列软件包中： * default-jre * gcj-4.6-jre-headless * gcj-4.7-jre-headless * openjdk-7-jre-headless * openjdk-6-jre-headless请尝试：sudo apt-get install &lt;选定的软件包&gt; 则可以通过以下方式来解决： 在终端输入如下命令：1234// 这里是输入你的jdk安装目录以及版本号，具体的根据自己的设置去配。sudo update-alternatives --install /usr/bin/java java /home/lester/develop/jdk1.6.0_37/bin/java 300sudo update-alternatives --install /usr/bin/javac javac /home/lester/develop/jdk1.6.0_37/bin/javac 300 在配置完以上信息之后，再去java -version 进行测试。就能看到成功配置的信息啦！～ 好了，初次接触linux下的开发，确实会遇到许多的问题，博主会将这些常见的问题一一记录下来，以便自己查看，也为了让其他和我一样刚入门的新手一些参考。]]></content>
@@ -94,9 +104,9 @@
         <category>实用工具</category>
       </categories>
       <tags>
+        <tag>ubuntu</tag>
         <tag>Apache2</tag>
         <tag>服务器</tag>
-        <tag>ubuntu</tag>
         <tag>linux</tag>
       </tags>
   </entry>

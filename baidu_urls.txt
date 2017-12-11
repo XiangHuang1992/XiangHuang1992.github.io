@@ -1,5 +1,5 @@
+http://www.huangxiang666.com/2017-12-11/Ubuntu下关于将普通用户权限提升为root的问题.html
 http://www.huangxiang666.com/2017-03-29/浏览器是如何工作的.html
 http://www.huangxiang666.com/2017-03-22/浏览器从请求发出到返回经历了什么.html
-http://www.huangxiang666.com/2017-03-17/Hibernate学习教程（二）-ORM-概述.html
-http://www.huangxiang666.com/2017-03-17/Hibernate教程（一）.html
-http://www.huangxiang666.com/2017-03-06/《Java解惑》读书笔记.html
+http://www.huangxiang666.com/2017-03-17/Hibernate学习教程（四）-映射文件和映射类型.html
+http://www.huangxiang666.com/2017-03-17/Hibernate学习教程（三）-Sessions.html
