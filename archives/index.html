@@ -324,7 +324,7 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017-12-11/Ubuntu下关于将普通用户权限提升为root的问题.html" itemprop="url">
+            <a class="post-title-link" href="/Ubuntu下关于将普通用户权限提升为root的问题.html" itemprop="url">
               
                 <span itemprop="name">Ubuntu下关于将普通用户权限提升为root的问题</span>
               
@@ -361,7 +361,7 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017-03-29/浏览器是如何工作的.html" itemprop="url">
+            <a class="post-title-link" href="/浏览器是如何工作的.html" itemprop="url">
               
                 <span itemprop="name">浏览器是如何工作的</span>
               
@@ -398,7 +398,7 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017-03-22/浏览器从请求发出到返回经历了什么.html" itemprop="url">
+            <a class="post-title-link" href="/浏览器从请求发出到返回经历了什么.html" itemprop="url">
               
                 <span itemprop="name">浏览器从请求发出到返回经历了什么</span>
               
@@ -435,7 +435,7 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017-03-17/Hibernate学习教程（四）-映射文件和映射类型.html" itemprop="url">
+            <a class="post-title-link" href="/Hibernate学习教程（四）-映射文件和映射类型.html" itemprop="url">
               
                 <span itemprop="name">Hibernate学习教程（四）----映射文件和映射类型</span>
               
@@ -472,7 +472,7 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017-03-17/Hibernate学习教程（三）-Sessions.html" itemprop="url">
+            <a class="post-title-link" href="/Hibernate学习教程（三）-Sessions.html" itemprop="url">
               
                 <span itemprop="name">Hibernate学习教程（三）----Sessions</span>
               
@@ -509,7 +509,7 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017-03-17/Hibernate学习教程（二）-ORM-概述.html" itemprop="url">
+            <a class="post-title-link" href="/Hibernate学习教程（二）-ORM-概述.html" itemprop="url">
               
                 <span itemprop="name">Hibernate学习教程（二）----ORM 概述</span>
               
@@ -546,7 +546,7 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017-03-17/Hibernate教程（一）.html" itemprop="url">
+            <a class="post-title-link" href="/Hibernate教程（一）.html" itemprop="url">
               
                 <span itemprop="name">Hibernate教程（一）---Hibernate简介</span>
               
@@ -583,7 +583,7 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017-03-06/《Java解惑》读书笔记.html" itemprop="url">
+            <a class="post-title-link" href="/《Java解惑》读书笔记.html" itemprop="url">
               
                 <span itemprop="name">《Java解惑》读书笔记</span>
               
@@ -620,7 +620,7 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017-02-28/windows下的cmd神器-Cmder.html" itemprop="url">
+            <a class="post-title-link" href="/windows下的cmd神器-Cmder.html" itemprop="url">
               
                 <span itemprop="name">windows下的cmd神器:Cmder介绍及其设置</span>
               
@@ -657,7 +657,7 @@
 
       <h3 class="post-title">
         
-            <a class="post-title-link" href="/2017-02-28/ubuntu下jdk环境变量配置.html" itemprop="url">
+            <a class="post-title-link" href="/ubuntu下jdk环境变量配置.html" itemprop="url">
               
                 <span itemprop="name">Ubuntu下jdk环境变量的配置</span>
               
@@ -852,18 +852,6 @@
   
 </div>
 
-#
- # <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-#
-
-#
- # <span class="post-meta-divider">|</span>
-#
-
-#
- # <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
-#
-
 
 
         
@@ -1011,11 +999,12 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://huangxiang.disqus.com/count.js" async></script>
-    
 
-    
+
+
+
+
+
 
   
 
@@ -1028,10 +1017,27 @@
 
 
 
-
-
-
-
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'y7PBuIBhIF5ApPPAUXxihcw2-gzGzoHsz',
+        appKey: 'FS9Srq3mrEfXeDRnNoknXImD',
+        placeholder: '欢迎留下您宝贵的意见，一起交流',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

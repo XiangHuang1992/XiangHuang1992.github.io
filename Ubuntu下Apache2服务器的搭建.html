@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Apache2,ubuntu,ubuntu下搭建Apache2服务器" />
 
 
 
@@ -85,17 +85,20 @@
 
 
 
-<meta name="description" content="why？ Web浏览器是世界上使用最广泛的软件。 浏览器提供web资源并创建可以允许web应用程序的沙箱环境。 浏览器实现这一点的方式非常复杂，并且由许多不同的标准决定。 浏览器的一些机制其实是具有着欺骗性和反直觉性。 了解浏览器的工作原理为我们提高网站/网页类应用程序的效率和代码的组织结构提供了理论依据。">
+<meta name="description" content="刚接触服务器端的开发，今天上班头要求在unbuntu下先搭建一个服务器，于是乎，博主又开始摸索了。嗯～进入正题，楼主选择的是Apache服务器。楼主的系统版本是：Ubuntu Kylin 15.10.">
+<meta name="keywords" content="Apache2,ubuntu,ubuntu下搭建Apache2服务器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浏览器是如何工作的">
-<meta property="og:url" content="http://www.huangxiang666.com/2017-03-29/浏览器是如何工作的.html">
+<meta property="og:title" content="Ubuntu下Apache2服务器的搭建">
+<meta property="og:url" content="http://www.huangxiang666.com/Ubuntu下Apache2服务器的搭建.html">
 <meta property="og:site_name" content="ferdinad_hx&#39;s Blog">
-<meta property="og:description" content="why？ Web浏览器是世界上使用最广泛的软件。 浏览器提供web资源并创建可以允许web应用程序的沙箱环境。 浏览器实现这一点的方式非常复杂，并且由许多不同的标准决定。 浏览器的一些机制其实是具有着欺骗性和反直觉性。 了解浏览器的工作原理为我们提高网站/网页类应用程序的效率和代码的组织结构提供了理论依据。">
+<meta property="og:description" content="刚接触服务器端的开发，今天上班头要求在unbuntu下先搭建一个服务器，于是乎，博主又开始摸索了。嗯～进入正题，楼主选择的是Apache服务器。楼主的系统版本是：Ubuntu Kylin 15.10.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-11T09:17:47.563Z">
+<meta property="og:image" content="http://7xt7l1.com1.z0.glb.clouddn.com/apache2%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87.jpg">
+<meta property="og:updated_time" content="2017-02-28T08:21:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浏览器是如何工作的">
-<meta name="twitter:description" content="why？ Web浏览器是世界上使用最广泛的软件。 浏览器提供web资源并创建可以允许web应用程序的沙箱环境。 浏览器实现这一点的方式非常复杂，并且由许多不同的标准决定。 浏览器的一些机制其实是具有着欺骗性和反直觉性。 了解浏览器的工作原理为我们提高网站/网页类应用程序的效率和代码的组织结构提供了理论依据。">
+<meta name="twitter:title" content="Ubuntu下Apache2服务器的搭建">
+<meta name="twitter:description" content="刚接触服务器端的开发，今天上班头要求在unbuntu下先搭建一个服务器，于是乎，博主又开始摸索了。嗯～进入正题，楼主选择的是Apache服务器。楼主的系统版本是：Ubuntu Kylin 15.10.">
+<meta name="twitter:image" content="http://7xt7l1.com1.z0.glb.clouddn.com/apache2%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87.jpg">
 
 
 
@@ -125,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://www.huangxiang666.com/2017-03-29/浏览器是如何工作的.html"/>
+  <link rel="canonical" href="http://www.huangxiang666.com/Ubuntu下Apache2服务器的搭建.html"/>
 
 
 
 
 
-  <title>浏览器是如何工作的 | ferdinad_hx's Blog</title>
+  <title>Ubuntu下Apache2服务器的搭建 | ferdinad_hx's Blog</title>
   
 
 
@@ -302,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.huangxiang666.com/2017-03-29/浏览器是如何工作的.html">
+    <link itemprop="mainEntityOfPage" href="http://www.huangxiang666.com/Ubuntu下Apache2服务器的搭建.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ferdinand_hx">
@@ -319,7 +322,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">浏览器是如何工作的</h2>
+          <h2 class="post-title" itemprop="name headline">Ubuntu下Apache2服务器的搭建</h2>
         
 
         <div class="post-meta">
@@ -331,8 +334,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-29T11:10:38+08:00">
-                2017-03-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-28T16:21:02+08:00">
+                2017-02-28
               </time>
             
 
@@ -342,6 +345,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/实用工具/" itemprop="url" rel="index">
+                    <span itemprop="name">实用工具</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -350,9 +375,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017-03-29/浏览器是如何工作的.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017-03-29/浏览器是如何工作的.html" itemprop="commentCount"></span>
+                <a href="/Ubuntu下Apache2服务器的搭建.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/Ubuntu下Apache2服务器的搭建.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -360,7 +384,7 @@
 
           
           
-             <span id="/2017-03-29/浏览器是如何工作的.html" class="leancloud_visitors" data-flag-title="浏览器是如何工作的">
+             <span id="/Ubuntu下Apache2服务器的搭建.html" class="leancloud_visitors" data-flag-title="Ubuntu下Apache2服务器的搭建">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -390,7 +414,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  399
+                  493
                 </span>
               
 
@@ -400,6 +424,10 @@
             </div>
           
 
+          
+              <div class="post-description">
+                  <blockquote class="blockquote-center">刚接触服务器端的开发，今天上班头要求在unbuntu下先搭建一个服务器，于是乎，博主又开始摸索了。嗯～进入正题，楼主选择的是Apache服务器。楼主的系统版本是：Ubuntu Kylin 15.10.</blockquote>
+              </div>
           
 
         </div>
@@ -415,44 +443,32 @@
       
 
       
-        <h2 id="why？"><a href="#why？" class="headerlink" title="why？"></a>why？</h2><ul>
-<li>Web浏览器是世界上使用最广泛的软件。</li>
-<li>浏览器提供web资源并创建可以允许web应用程序的沙箱环境。</li>
-<li>浏览器实现这一点的方式非常复杂，并且由许多不同的标准决定。</li>
-<li>浏览器的一些机制其实是具有着欺骗性和反直觉性。</li>
-<li>了解浏览器的工作原理为我们提高网站/网页类应用程序的效率和代码的组织结构提供了理论依据。</li>
+        <a id="more"></a>
+<h2 id="Apache服务器的下载与安装"><a href="#Apache服务器的下载与安装" class="headerlink" title="Apache服务器的下载与安装"></a>Apache服务器的下载与安装</h2><p>博主选择的是使用apt-get开发包打包的方式安装的。下面是安装步骤：</p>
+<ul>
+<li><p>安装apache，在命令行终端中输入以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install apache2</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果网络连接正常的话，应该是会顺利安装好的，在安装完成之后，需要重启apache服务，在命令行终端中输入如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ sudo /etc/init.d/apache2 restart</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">&gt;  如果重启之后出现如下提示，则表示服务器已经启动成功了。</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<a id="more"></a>
-<h2 id="复杂"><a href="#复杂" class="headerlink" title="复杂"></a>复杂</h2><ul>
-<li>这里无法讲解浏览器工作原理的所有细节。</li>
-<li>每个浏览器都有自己的实现方式。</li>
-</ul>
-<h2 id="一般和模块化的方法"><a href="#一般和模块化的方法" class="headerlink" title="一般和模块化的方法"></a>一般和模块化的方法</h2><ul>
-<li>浏览器遵循相同的标准</li>
-<li>大多数浏览器有着相同的总体结构和同样的模块</li>
-</ul>
-<p><strong>本文将讨论这些共同行为。</strong></p>
-<h2 id="浏览器的两个主要模块"><a href="#浏览器的两个主要模块" class="headerlink" title="浏览器的两个主要模块"></a>浏览器的两个主要模块</h2><ul>
-<li>渲染引擎（也成为布局引擎）</li>
-<li>Javascript解释器</li>
-</ul>
-<h3 id="不同浏览器使用的渲染引擎不一样"><a href="#不同浏览器使用的渲染引擎不一样" class="headerlink" title="不同浏览器使用的渲染引擎不一样"></a>不同浏览器使用的渲染引擎不一样</h3><ul>
-<li>Mozilla Firefox 使用 <code>Gecko</code></li>
-<li>Safari 和 Google Chrome（version 27之前）使用<code>Webkit</code>。</li>
-<li>Chrome使用<code>Blink</code>在version 27之后</li>
-</ul>
-<h3 id="一个web页面的组成"><a href="#一个web页面的组成" class="headerlink" title="一个web页面的组成"></a>一个web页面的组成</h3><ul>
-<li>HTML：应用程序的内容</li>
-<li>CSS： 内容的样式</li>
-<li>Javascript： 应用程序的逻辑部分，有时也是一些动画(animations)等等。</li>
-<li>其它</li>
-</ul>
-<h3 id="渲染引擎（rendering-engine）的工作"><a href="#渲染引擎（rendering-engine）的工作" class="headerlink" title="渲染引擎（rendering engine）的工作"></a>渲染引擎（rendering engine）的工作</h3><p>从HTML,CSS,JS开始，将网页呈现在用户屏幕上，大概需要经过四个阶段：</p>
+<p>lucas@lucas-ThinkPad-PC:~$ sudo /etc/init.d/apache2 restart<br>[ ok ] Restarting apache2 (via systemctl): apache2.service.<br>```</p>
+<blockquote>
+<p>可能出现的问题1： NameVirtualHost * :80 has no VirtualHost.</p>
+<blockquote>
+<p>出现上述问题的原因：定义了多个NameVirtualHost，我们只需要将/etc/apahce2/ports.conf 中的NameVirtualHost * :80注释掉即可。</p>
+</blockquote>
+<p>可能出现的问题2： Could not reliably determine the server’s fully qualified domain name, using 127.0.1.1 for ServerName </p>
 <ol>
-<li>处理HTML构建DOM，处理CSS构建CSSOM</li>
-<li>将DOM和CSSOM合并到一个渲染树中</li>
-<li>布局渲染树（render tree）,通过几何计算</li>
+<li>原因：根据提示，无法可靠的确定服务器的有效域名，使用127.0.1.1作为服务器域名。因此在下面的测试中，应该使用127.0.1.1，而不是127.0.0.1。</li>
+<li>解决方法：终端输入<code>vim /etc/apache2/httpd.conf</code>，在文件中添加ServerName localhost:80 ，再次restart apache2,就可以使用127.0.0.1来访问web服务器了。</li>
 </ol>
+</blockquote>
+<h2 id="Apache服务器的测试"><a href="#Apache服务器的测试" class="headerlink" title="Apache服务器的测试"></a>Apache服务器的测试</h2><p>既然已经安装好了，name我们当然应该测试一下了。</p>
+<p>在浏览器中输入<code>http://localhost</code>或者<code>http://127.0.0.1</code>，如果看到了It works，那么就说明服务器成功安装了。Apache的默认安装，会在<code>var/www/</code>的目录，这个就是我们的web目录了，所有需要能够浏览器访问的web文件都要放在这个目录里。</p>
+<p>下面是楼主的测试结果：<br><img src="http://7xt7l1.com1.z0.glb.clouddn.com/apache2%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87.jpg" alt="apahce服务器测试结果"></p>
+<p>PS:好了。至此Ubuntu下Apache服务器的安装就已经完成，下面的文章中，我将继续Apache服务器配置文件的详解。</p>
 
       
     </div>
@@ -512,7 +528,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://www.huangxiang666.com/2017-03-29/浏览器是如何工作的.html" title="浏览器是如何工作的">http://www.huangxiang666.com/2017-03-29/浏览器是如何工作的.html</a>
+    <a href="http://www.huangxiang666.com/Ubuntu下Apache2服务器的搭建.html" title="Ubuntu下Apache2服务器的搭建">http://www.huangxiang666.com/Ubuntu下Apache2服务器的搭建.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -525,6 +541,18 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+        <a href="/tags/Apache2/" rel="tag"><i class="fa fa-tag"></i> Apache2</a>
+          
+        <a href="/tags/服务器/" rel="tag"><i class="fa fa-tag"></i> 服务器</a>
+          
+        <a href="/tags/ubuntu/" rel="tag"><i class="fa fa-tag"></i> ubuntu</a>
+          
+        <a href="/tags/linux/" rel="tag"><i class="fa fa-tag"></i> linux</a>
+          
+        </div>
+      
 
       
       
@@ -534,8 +562,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017-03-22/浏览器从请求发出到返回经历了什么.html" rel="next" title="浏览器从请求发出到返回经历了什么">
-                <i class="fa fa-chevron-left"></i> 浏览器从请求发出到返回经历了什么
+              <a href="/bower error.html" rel="next" title="Bower:Additional error details:Name must be lowercase, can contain digits, dots, dashes, "@" or spaces">
+                <i class="fa fa-chevron-left"></i> Bower:Additional error details:Name must be lowercase, can contain digits, dots, dashes, "@" or spaces
               </a>
             
           </div>
@@ -544,8 +572,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017-12-11/Ubuntu下关于将普通用户权限提升为root的问题.html" rel="prev" title="Ubuntu下关于将普通用户权限提升为root的问题">
-                Ubuntu下关于将普通用户权限提升为root的问题 <i class="fa fa-chevron-right"></i>
+              <a href="/ubuntu下jdk环境变量配置.html" rel="prev" title="Ubuntu下jdk环境变量的配置">
+                Ubuntu下jdk环境变量的配置 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -603,14 +631,7 @@ var jiathis_config={
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
     </div>
-
   
 
 
@@ -753,7 +774,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#why？"><span class="nav-number">1.</span> <span class="nav-text">why？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复杂"><span class="nav-number">2.</span> <span class="nav-text">复杂</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一般和模块化的方法"><span class="nav-number">3.</span> <span class="nav-text">一般和模块化的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器的两个主要模块"><span class="nav-number">4.</span> <span class="nav-text">浏览器的两个主要模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#不同浏览器使用的渲染引擎不一样"><span class="nav-number">4.1.</span> <span class="nav-text">不同浏览器使用的渲染引擎不一样</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一个web页面的组成"><span class="nav-number">4.2.</span> <span class="nav-text">一个web页面的组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#渲染引擎（rendering-engine）的工作"><span class="nav-number">4.3.</span> <span class="nav-text">渲染引擎（rendering engine）的工作</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Apache服务器的下载与安装"><span class="nav-number">1.</span> <span class="nav-text">Apache服务器的下载与安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Apache服务器的测试"><span class="nav-number">2.</span> <span class="nav-text">Apache服务器的测试</span></a></li></ol></div>
             
 
           </div>
@@ -791,18 +812,6 @@ var jiathis_config={
     <span title="Site words total count">16.0k</span>
   
 </div>
-
-#
- # <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-#
-
-#
- # <span class="post-meta-divider">|</span>
-#
-
-#
- # <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
-#
 
 
 
@@ -955,23 +964,12 @@ var jiathis_config={
 
   
 
-    
-      <script id="dsq-count-scr" src="https://huangxiang.disqus.com/count.js" async></script>
-    
 
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://www.huangxiang666.com/2017-03-29/浏览器是如何工作的.html';
-          this.page.identifier = '2017-03-29/浏览器是如何工作的.html';
-          this.page.title = '浏览器是如何工作的';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://huangxiang.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
+
+
+
+
+
 
   
 
@@ -984,10 +982,27 @@ var jiathis_config={
 
 
 
-
-
-
-
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'y7PBuIBhIF5ApPPAUXxihcw2-gzGzoHsz',
+        appKey: 'FS9Srq3mrEfXeDRnNoknXImD',
+        placeholder: '欢迎留下您宝贵的意见，一起交流',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
