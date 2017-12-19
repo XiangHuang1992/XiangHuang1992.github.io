@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Mac OS下使用pyenv管理Python版本]]></title>
+    <url>%2FMac-OS%E4%B8%8B%E4%BD%BF%E7%94%A8pyenv%E7%AE%A1%E7%90%86Python%E7%89%88%E6%9C%AC.html</url>
+    <content type="text"></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Pyenv</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Ubuntu下关于将普通用户权限提升为root的问题]]></title>
     <url>%2FUbuntu%E4%B8%8B%E5%85%B3%E4%BA%8E%E5%B0%86%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87%E4%B8%BAroot%E7%9A%84%E9%97%AE%E9%A2%98.html</url>
     <content type="text"><![CDATA[问题的由来 博主一个好奇就想把自己的那个用户提升为root级别的，所以进行了如下操作。1234567suvi etc/passwd然后将自己创建的那个用户（博主的用户名为lucas），对应的值lucas:x:1000:0:lucas,,,:/home/lucas:/bin/bash中的1000修改成了和root用户一样的0.好吧，这下lucas确实成了root用户了，但是问题就来了，你下次登录的适合界面上只剩下客人会话了。其它会话都没了。 解决措施1234567在用户登录界面，按下 `ctrl+alt+f7`进入命令行界面。按照如下操作进行：输入用户名：lucas（博主的）输入密码：xxxxxx然后使用vi命令打开我们修改过的文件：/etc/passwd将0修改成原来的数值。这样我们的登录界面又会出现用户登录啦！好吧。。至此，问题解决。 PS：博主的Linux系统的Ubuntu kylin 15.10 的版本。具体的原因是ubuntu从12.04开始，添加了额外的root保护，不允许直接开启root账户，强制使账户改为root账户会被屏蔽。所以以后不能再继续作死了。老老实实的用sudo吧。%&gt;_&lt;%。 记录时间：2015年12月10日19:05:05。下班吃饭。]]></content>
