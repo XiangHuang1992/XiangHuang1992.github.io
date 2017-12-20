@@ -4,32 +4,8 @@
 
     
   <url>
-    <loc>http://www.huangxiang666.com/android%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%E4%B9%8B%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83.html</loc>
-    <lastmod>2017-12-20T08:14:52.674Z</lastmod>
-    <data>
-        <display>
-        <title>android开发规范之编码规范</title>
-        <pubTime>2017-12-20T08:01:41.283Z</pubTime>
-        
-        <tag>android</tag>
-         
-        <tag>android开发</tag>
-         
-        <tag>编码规范</tag>
-         
-         
-           
-             
-              <breadCrumb title="android" url="http://www.huangxiang666.com/categories/android/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.huangxiang666.com/android-%E6%9C%BA%E5%9E%8B%E9%80%82%E9%85%8D.html</loc>
-    <lastmod>2017-12-20T08:00:13.146Z</lastmod>
+    <lastmod>2017-12-20T08:19:50.331Z</lastmod>
     <data>
         <display>
         <title>android 机型适配</title>
@@ -42,6 +18,48 @@
         <tag>屏幕适配</tag>
          
         <tag>android进阶</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://www.huangxiang666.com/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huangxiang666.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BB%8E%E8%AF%B7%E6%B1%82%E5%8F%91%E5%87%BA%E5%88%B0%E8%BF%94%E5%9B%9E%E7%BB%8F%E5%8E%86%E4%BA%86%E4%BB%80%E4%B9%88.html</loc>
+    <lastmod>2017-12-20T08:19:36.278Z</lastmod>
+    <data>
+        <display>
+        <title>浏览器从请求发出到返回经历了什么</title>
+        <pubTime>2017-03-22T03:11:07.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="web" url="http://www.huangxiang666.com/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huangxiang666.com/android%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%E4%B9%8B%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83.html</loc>
+    <lastmod>2017-12-20T08:14:52.674Z</lastmod>
+    <data>
+        <display>
+        <title>android开发规范之编码规范</title>
+        <pubTime>2017-12-20T08:01:41.283Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>android开发</tag>
+         
+        <tag>编码规范</tag>
          
          
            
@@ -156,21 +174,6 @@
         <display>
         <title>浏览器是如何工作的</title>
         <pubTime>2017-03-29T03:10:38.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.huangxiang666.com/%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BB%8E%E8%AF%B7%E6%B1%82%E5%8F%91%E5%87%BA%E5%88%B0%E8%BF%94%E5%9B%9E%E7%BB%8F%E5%8E%86%E4%BA%86%E4%BB%80%E4%B9%88.html</loc>
-    <lastmod>2017-12-11T09:17:47.562Z</lastmod>
-    <data>
-        <display>
-        <title>浏览器从请求发出到返回经历了什么</title>
-        <pubTime>2017-03-22T03:11:07.000Z</pubTime>
         
          
            
