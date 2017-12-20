@@ -17,7 +17,7 @@
     <url>%2FUbuntu%E4%B8%8B%E5%85%B3%E4%BA%8E%E5%B0%86%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90%E6%8F%90%E5%8D%87%E4%B8%BAroot%E7%9A%84%E9%97%AE%E9%A2%98.html</url>
     <content type="text"><![CDATA[问题的由来 博主一个好奇就想把自己的那个用户提升为root级别的，所以进行了如下操作。1234567suvi etc/passwd然后将自己创建的那个用户（博主的用户名为lucas），对应的值lucas:x:1000:0:lucas,,,:/home/lucas:/bin/bash中的1000修改成了和root用户一样的0.好吧，这下lucas确实成了root用户了，但是问题就来了，你下次登录的适合界面上只剩下客人会话了。其它会话都没了。 解决措施1234567在用户登录界面，按下 `ctrl+alt+f7`进入命令行界面。按照如下操作进行：输入用户名：lucas（博主的）输入密码：xxxxxx然后使用vi命令打开我们修改过的文件：/etc/passwd将0修改成原来的数值。这样我们的登录界面又会出现用户登录啦！好吧。。至此，问题解决。 PS：博主的Linux系统的Ubuntu kylin 15.10 的版本。具体的原因是ubuntu从12.04开始，添加了额外的root保护，不允许直接开启root账户，强制使账户改为root账户会被屏蔽。所以以后不能再继续作死了。老老实实的用sudo吧。%&gt;_&lt;%。 记录时间：2015年12月10日19:05:05。下班吃饭。]]></content>
       <categories>
-        <category>问题搜集整理</category>
+        <category>错误收集</category>
       </categories>
       <tags>
         <tag>ubuntu</tag>
@@ -28,6 +28,13 @@
     <title><![CDATA[浏览器是如何工作的]]></title>
     <url>%2F%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.html</url>
     <content type="text"><![CDATA[why？ Web浏览器是世界上使用最广泛的软件。 浏览器提供web资源并创建可以允许web应用程序的沙箱环境。 浏览器实现这一点的方式非常复杂，并且由许多不同的标准决定。 浏览器的一些机制其实是具有着欺骗性和反直觉性。 了解浏览器的工作原理为我们提高网站/网页类应用程序的效率和代码的组织结构提供了理论依据。 复杂 这里无法讲解浏览器工作原理的所有细节。 每个浏览器都有自己的实现方式。 一般和模块化的方法 浏览器遵循相同的标准 大多数浏览器有着相同的总体结构和同样的模块 本文将讨论这些共同行为。 浏览器的两个主要模块 渲染引擎（也成为布局引擎） Javascript解释器 不同浏览器使用的渲染引擎不一样 Mozilla Firefox 使用 Gecko Safari 和 Google Chrome（version 27之前）使用Webkit。 Chrome使用Blink在version 27之后 一个web页面的组成 HTML：应用程序的内容 CSS： 内容的样式 Javascript： 应用程序的逻辑部分，有时也是一些动画(animations)等等。 其它 渲染引擎（rendering engine）的工作从HTML,CSS,JS开始，将网页呈现在用户屏幕上，大概需要经过四个阶段： 处理HTML构建DOM，处理CSS构建CSSOM 将DOM和CSSOM合并到一个渲染树中 布局渲染树（render tree）,通过几何计算]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>web</tag>
+        <tag>浏览器</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[浏览器从请求发出到返回经历了什么]]></title>
@@ -36,6 +43,10 @@
       <categories>
         <category>web</category>
       </categories>
+      <tags>
+        <tag>web</tag>
+        <tag>浏览器</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hibernate学习教程（二）----ORM 概述]]></title>
@@ -68,7 +79,7 @@
     <url>%2F%E3%80%8AJava%E8%A7%A3%E6%83%91%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.html</url>
     <content type="text"><![CDATA[表达式之谜奇数性奇数：被2整除余1的数。表达式i%2是计算i除以2时所产生的余数。这个表达式其实是错误的。在所有的int数值中，有一半的值为负数，当值为负数时，无论该值为奇数还是偶数，结果都会返回false。123456789101112package com.hx.test;public class HelloWorld &#123; public static void main(String[] args) &#123; System.out.println(isOdd(-5)); &#125; public static boolean isOdd(int i) &#123;// return i % 2 == 1; // 这个表达式是错误的。// return i % 2 != 0; // 正确 return (i &amp; 1) != 0; // 正确 &#125;&#125; 找零时刻1234567891011package com.hx.test;import java.math.BigDecimal;public class HelloWorld &#123; public static void main(String[] args) &#123; System.out.println(2.00 - 1.10); // 输出结果0.8999999999999999 System.out.println((200-110)+"cents"); //输出结果 90 cents System.out.println(new BigDecimal("2.00").subtract(new BigDecimal("1.10"))); //输出结果0.9 &#125;&#125; 在需要使用精确数值的地方，要避免使用float和double，对于货币计算，要使用int,long,BigDecimal。 长整除123456789101112131415161718package com.hx.test;import java.math.BigDecimal;public class HelloWorld &#123; public static void main(String[] args) &#123; final long MICROS_PRE_DAY = 24*60*60*1000*1000; final long MILLS_PRE_DAY = 24*60*60*1000; //final long MICROS_PRE_DAY = 24L*60*60*1000*1000; //final long MILLS_PRE_DAY = 24L*60*60*1000; System.out.println(MICROS_PRE_DAY/MILLS_PRE_DAY); // 为什么结果会打印5？？？ // &#125;&#125; 当操作很大的数字时，千万要提防溢出。即便用来保存结果的变量足够大，也并不意味着要产生结果的计算具有正确的类型。当拿不准的时候，就使用long运算来执行整个计算。 十六进制的趣事123456789package com.hx.test;public class HelloWorld &#123; public static void main(String[] args) &#123; System.out.println(Long.toHexString(0x100000000L + 0xcafebabe)); // cafebabe System.out.println(Long.toHexString(0x100000000L + 0xcafebabeL)); // 1cafebabe &#125;&#125; 混合类型的计算可能产生混淆，尤其需要注意的是十六进制和八进制字面常量无需显式的减号符号就可以表示负的数值，为了避免这种窘境，通常最好避免混合类型的计算。]]></content>
       <categories>
-        <category>Java解惑</category>
+        <category>Java</category>
       </categories>
       <tags>
         <tag>java解惑</tag>
@@ -106,7 +117,7 @@
     <url>%2FUbuntu%E4%B8%8BApache2%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA.html</url>
     <content type="text"><![CDATA[Apache服务器的下载与安装博主选择的是使用apt-get开发包打包的方式安装的。下面是安装步骤： 安装apache，在命令行终端中输入以下命令： 1$ sudo apt-get install apache2 如果网络连接正常的话，应该是会顺利安装好的，在安装完成之后，需要重启apache服务，在命令行终端中输入如下命令： 1234$ sudo /etc/init.d/apache2 restart``` &gt; 如果重启之后出现如下提示，则表示服务器已经启动成功了。 lucas@lucas-ThinkPad-PC:~$ sudo /etc/init.d/apache2 restart[ ok ] Restarting apache2 (via systemctl): apache2.service.``` 可能出现的问题1： NameVirtualHost * :80 has no VirtualHost. 出现上述问题的原因：定义了多个NameVirtualHost，我们只需要将/etc/apahce2/ports.conf 中的NameVirtualHost * :80注释掉即可。 可能出现的问题2： Could not reliably determine the server’s fully qualified domain name, using 127.0.1.1 for ServerName 原因：根据提示，无法可靠的确定服务器的有效域名，使用127.0.1.1作为服务器域名。因此在下面的测试中，应该使用127.0.1.1，而不是127.0.0.1。 解决方法：终端输入vim /etc/apache2/httpd.conf，在文件中添加ServerName localhost:80 ，再次restart apache2,就可以使用127.0.0.1来访问web服务器了。 Apache服务器的测试既然已经安装好了，name我们当然应该测试一下了。 在浏览器中输入http://localhost或者http://127.0.0.1，如果看到了It works，那么就说明服务器成功安装了。Apache的默认安装，会在var/www/的目录，这个就是我们的web目录了，所有需要能够浏览器访问的web文件都要放在这个目录里。 下面是楼主的测试结果： PS:好了。至此Ubuntu下Apache服务器的安装就已经完成，下面的文章中，我将继续Apache服务器配置文件的详解。]]></content>
       <categories>
-        <category>实用工具</category>
+        <category>web</category>
       </categories>
       <tags>
         <tag>Apache2</tag>
@@ -132,7 +143,7 @@
     <url>%2F%E4%BD%BF%E7%94%A8Crypto-JS%E8%BF%9B%E8%A1%8CAES%E5%8A%A0%E5%AF%86.html</url>
     <content type="text"><![CDATA[## 使用Crypto-JS进行AES加密 在最近的项目中，调用登录接口，需要对账号密码数据进行AES加密后再进行传输，使用的是AES/ECB/PKCS5Padding,我前端部分使用选择了CryptoJS,现在把使用的过程记录如下。 需要注意的点 Crypto-JS的encrypt函数不会返回字符串，需要调用对象的toString方法，或者通过Crypto-js转码才能得到真实的结果。 使用步骤 引入Crypto-JS中的 aes.js及相关模块 1234&quot;bower_components/cryptojs/aes.js&quot;,&quot;bower_components/cryptojs/enc-utf8.js&quot;,&quot;bower_components/cryptojs/pad-pkcs7.js&quot;,&quot;bower_components/cryptojs/mode-ecb.js&quot; 调用CryptoJS.AES 12345678910111213141516// 官方示例, 每次输出的密文都不一样,这样使用的话是错误的CryptoJS.AES.encrypt("Message", "Secret Passphrase");/* 正确的使用姿势！！ */// 使用用户名进行MD5，32位，作为keyvar key_str = md5.createHash(username);// 将key转换成128 bitvar key = CryptoJS.enc.Utf8.parse(key_str);// 对password进行AES加密var AESPass = CryptoJS.AES.encrypt(password, key, &#123; mode: CryptoJS.mode.ECB, //补齐方式 CBC,ECB,etc. padding: CryptoJS.pad.Pkcs7 // 偏移规则设定 pack5，pkcs7，nopadding,etc.&#125;);// CryptoJS 的 encrypt函数不会直接返回字符串，需要toString或者Crypto-JS进行转码才能得到真实的结果。var pass = AESPass.toString();var authData = Base64.encode(username + ':' + pass).replace(/[\r\n]/g, ''); // 去除回车换行符 使用AngularJS的方式调用CryptoJS.AES 使用Angular将AES封装成一个provider 提供两种方式设置key 12345// 1. 一种为在angular.module('xxxx').config中进行设置，此种方式适用于key为一个固定值的情况 CryptoKeyProvider.setCryptofraphyKey('key') // 在config中设置key $crypto.encrypto('plaintext') // 在业务逻辑处直接传入需要加密的明文进行调用// 2. 第二种方式,每次都设置不同的key $crypto.encrypto('plaintext','key') 具体源码如下： 注意：解密时，需要先将密文转换成Base64的编码的格式。 使用CryptoJS.enc.Hex.parse转换成十六进制 使用CryptoJS.enc.Base64.stringify将其变成Base64编码的字符串 最后才能传入CryptoJS.AES.decrypt方法对其解密]]></content>
       <categories>
-        <category>Web开发</category>
+        <category>web</category>
       </categories>
       <tags>
         <tag>AES</tag>
@@ -157,7 +168,7 @@
     <url>%2Fweb%E5%BC%80%E5%8F%91%E4%B8%AD%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3.html</url>
     <content type="text"><![CDATA[web开发中乱码问题的解决由于楼主刚刚接触web不久，自然而然的就遇到了乱码问题。下面就记录一下乱码问题的解决。 表单的提交分为GET和POST两种请求方式。两种方式的乱码解决又不一样，用post提交请求时，只需要在接受的时候加上request.setCharacterEncoding(&quot;utf-8&quot;); 而GET的请求方法在处理时，应该将接收过来的值打碎成 ISO-8859-1编码，然后再组装成utf-8:new String(request.getParameter(param).getBytes(&quot;iso-8859-1&quot;),&quot;UTF-8&quot;); 过滤器的乱码处理问题 如果每次接收都像上面那样去处理的话肯定是太麻烦了，用过滤器来处理请求的乱码问题很方便，只需要写一个过滤器，就可以过滤所有请求页面的乱码问题了。至于如何用过滤器处理乱码请参考用过滤器来解决JSP中的乱码问题。不过值得注意的是，如果使用Struts的话，在web.xml里面处理编码的过滤器必须在struts过滤器前面注册，否则所有页面都不会经过过滤器。 AJAX请求的乱码问题 如果使用ajax出现了乱码问题这样解决：前端ajax函数的请求的url里面中文参数用两个encodeURI()函数处理，var url=&quot;user.do?p=checkUser&amp;name=&quot;+encodingURI(encodingURI(username.value))&quot;而服务器端则用 URLDecoder.decode()函数去接收，string userName = URLDecoder.decode(request.getParameter(&quot;name&quot;),&quot;utf-8&quot;); 这样就能够解决ajax请求中乱码的问题了。 PS:以上几条是摘自网上的。我暂时还没遇到。 在我的项目中，遇到的问题是发送get请求时出现乱码，导致这个问题的原因是，我在web.xml 文件中之配置了针对post请求的编码设置，但是tomcat对POST和GET请求的处理方式是不一样的，我们要针对GET请求出现乱码问题的解决，就需要修改tomcat下的server.xml文件，如下所示：将原来的配置：1&lt;Connector connectionTimeout=&quot;20000&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; redirectPort=&quot;8443&quot;/&gt; 改为：1&lt;Connector connectionTimeout=&quot;20000&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; redirectPort=&quot;8443&quot; useBodyEncodingForURI=&quot;true&quot;/&gt; 然而，如果你修改的是tomcat安装目录下的server.xml文件的话，那么你在eclipse当中运行项目时会发现配置并没有起作用，这是因为eclipse在运行时用的是eclipse当中配置的tomact，所以我们需要打开左侧项目列表server文件夹--&gt;tomcat--&gt;server.xml按照以上的方式做同样的修改. ！这里需要注意的是：配置useBodyEncodingForURI=&quot;true&quot;后，可以解决普通get请求的中文乱码问题，但是对于通过ajax发起的get请求中文依然会乱码，请把useBodyEncodingForURI=&quot;true&quot;改为URIEncoding=&quot;UTF-8&quot;即可。 然而经过了以上的设置之后，博主的乱码问题依然没有解决，如下图所示： 在建立一条新数据之后，显示出来的是一串的？？？？。好吧，这时候自然而然的想到了数据库的编码问题了。于是， 1234567891011121314sudo /ect/init.d/mysql startmysql&gt; show variables like &quot;%char%&quot;;+--------------------------+----------------------------+| Variable_name | Value |+--------------------------+----------------------------+| character_set_client | utf8 || character_set_connection | utf8 || character_set_database | latin1 || character_set_filesystem | binary || character_set_results | utf8 || character_set_server | latin1 || character_set_system | utf8 || character_sets_dir | /usr/share/mysql/charsets/ |+--------------------------+----------------------------+ 根据上面的显示我们可以发现character-set-server和character-set-database的编码是latin1，所以，接下来我就要将其修改为utf8了。 12345// 1. 打开mysql的配置文件，ubuntu下是my.cnflucas@lucas-ThinkPad-PC:~$ sudo vim /etc/mysql/my.cnf// 2. 在配置文件中加入以下一句character-set-server=utf8 // 自己根据对应的需要修改的在对应的节点下添加。// 3. 这样问题就解决了。 我是使用命令行进行修改的： 12345678910111213141516171819202122232425262728293031323334353637lucas@lucas-ThinkPad-PC:~$ suroot@lucas-ThinkPad-PC:/home/lucas# mysql -u root -pmysql&gt; set character_set_client=utf8;Query OK, 0 rows affected (0.00 sec)mysql&gt; set character_set_connection=utf8;Query OK, 0 rows affected (0.00 sec)mysql&gt; set character_set_database=utf8;Query OK, 0 rows affected (0.00 sec)mysql&gt; set character_set_results=utf8;Query OK, 0 rows affected (0.00 sec)mysql&gt; set character_set_server=utf8;Query OK, 0 rows affected (0.00 sec)mysql&gt; set character_set_system=utf8;Query OK, 0 rows affected (0.01 sec)mysql&gt; set collation_connection=utf8;Query OK, 0 rows affected (0.01 sec)mysql&gt; set collation_database=utf8;Query OK, 0 rows affected (0.01 sec)mysql&gt; set collation_server=utf8;Query OK, 0 rows affected (0.01 sec)mysql&gt; show variables like &apos;character_set_%&apos;;+--------------------------+----------------------------+| Variable_name | Value |+--------------------------+----------------------------+| character_set_client | utf8 || character_set_connection | utf8 || character_set_database | utf8 || character_set_filesystem | binary || character_set_results | utf8 || character_set_server | utf8 || character_set_system | utf8 || character_sets_dir | /usr/share/mysql/charsets/ |+--------------------------+----------------------------+8 rows in set (0.00 sec)// 经过一番折腾之后，修改完毕，重启数据库，再运行一下项目，发现添加数据再也没有乱码了。 当然，除此之外，还有一些乱码的问题，例如浏览器的默认编码啊什么的。这些直接设置一下浏览器的编码就行了。还有许多我暂时还没接触到的。等博主接触到了再加上去吧。继续上班。。。。]]></content>
       <categories>
-        <category>web</category>
+        <category>错误收集</category>
       </categories>
       <tags>
         <tag>utf-8</tag>
@@ -171,7 +182,7 @@
     <url>%2Fmaven%E5%8A%A0%E5%85%A5json-lib-jar%E6%8A%A5%E9%94%99Missing-artifact-net-sf-json-lib-json-lib-jar-2-4-compile.html</url>
     <content type="text"><![CDATA[在pom.xml文件中添加json-lib： 12345&lt;dependency&gt; &lt;groupId&gt;net.sf.json-lib&lt;/groupId&gt; &lt;artifactId&gt;json-lib&lt;/artifactId&gt; &lt;version&gt;2.4&lt;/version&gt;&lt;/dependency&gt; 出现错误： Missing artifact net.sf.json-lib:json-lib:jar:2.4:compile 出现错误的原因：json-lib是区分jdk版本的，pom.xml中的配置应该加上标签classifiter指定jdk版本: 1234567&lt;dependency&gt; &lt;groupId&gt;net.sf.json-lib&lt;/groupId&gt; &lt;artifactId&gt;json-lib&lt;/artifactId&gt; &lt;version&gt;2.4&lt;/version&gt; &lt;!-- 加上jdk版本,如jdk15 --&gt; &lt;classifier&gt;jdk15&lt;/classifier&gt;&lt;/dependency&gt; 这样，错误就解决了。]]></content>
       <categories>
-        <category>java开发问题</category>
+        <category>错误收集</category>
       </categories>
       <tags>
         <tag>java</tag>
