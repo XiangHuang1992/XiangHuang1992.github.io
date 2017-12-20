@@ -4,6 +4,130 @@
 
     
   <url>
+    <loc>http://www.huangxiang666.com/android%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%E4%B9%8B%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83.html</loc>
+    <lastmod>2017-12-20T08:14:52.674Z</lastmod>
+    <data>
+        <display>
+        <title>android开发规范之编码规范</title>
+        <pubTime>2017-12-20T08:01:41.283Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>android开发</tag>
+         
+        <tag>编码规范</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://www.huangxiang666.com/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huangxiang666.com/android-%E6%9C%BA%E5%9E%8B%E9%80%82%E9%85%8D.html</loc>
+    <lastmod>2017-12-20T08:00:13.146Z</lastmod>
+    <data>
+        <display>
+        <title>android 机型适配</title>
+        <pubTime>2017-12-20T07:57:05.623Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>机型适配</tag>
+         
+        <tag>屏幕适配</tag>
+         
+        <tag>android进阶</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://www.huangxiang666.com/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huangxiang666.com/volley-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90.html</loc>
+    <lastmod>2017-12-20T07:55:26.869Z</lastmod>
+    <data>
+        <display>
+        <title>volley 源码解析</title>
+        <pubTime>2017-12-20T07:52:06.881Z</pubTime>
+        
+        <tag>android</tag>
+         
+        <tag>开源项目</tag>
+         
+        <tag>volley</tag>
+         
+        <tag>源码</tag>
+         
+         
+           
+             
+              <breadCrumb title="android" url="http://www.huangxiang666.com/categories/android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huangxiang666.com/web%E5%BC%80%E5%8F%91%E4%B8%AD%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3.html</loc>
+    <lastmod>2017-12-20T07:50:32.484Z</lastmod>
+    <data>
+        <display>
+        <title>web开发中乱码问题的解决</title>
+        <pubTime>2017-12-20T07:45:31.790Z</pubTime>
+        
+        <tag>utf-8</tag>
+         
+        <tag>编码</tag>
+         
+        <tag>乱码</tag>
+         
+        <tag>web开发</tag>
+         
+         
+           
+             
+              <breadCrumb title="web" url="http://www.huangxiang666.com/categories/web/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.huangxiang666.com/maven%E5%8A%A0%E5%85%A5json-lib-jar%E6%8A%A5%E9%94%99Missing-artifact-net-sf-json-lib-json-lib-jar-2-4-compile.html</loc>
+    <lastmod>2017-12-20T07:44:22.109Z</lastmod>
+    <data>
+        <display>
+        <title>maven加入json-lib.jar报错Missing artifact net.sf.json-lib:json-lib:jar:2.4:compile</title>
+        <pubTime>2017-12-20T07:40:57.091Z</pubTime>
+        
+        <tag>maven</tag>
+         
+        <tag>java</tag>
+         
+         
+           
+             
+              <breadCrumb title="java开发问题" url="http://www.huangxiang666.com/categories/java%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.huangxiang666.com/Mac-OS%E4%B8%8B%E4%BD%BF%E7%94%A8pyenv%E7%AE%A1%E7%90%86Python%E7%89%88%E6%9C%AC.html</loc>
     <lastmod>2017-12-20T07:27:57.078Z</lastmod>
     <data>
