@@ -233,6 +233,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-commonweal">
           <a href="/404/" rel="section">
             
@@ -394,8 +404,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/bower error.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="bower error.html" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/bower error.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -607,8 +616,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/使用Crypto-JS进行AES加密.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="使用Crypto-JS进行AES加密.html" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/使用Crypto-JS进行AES加密.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -820,8 +828,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/python基本常识.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="python基本常识.html" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/python基本常识.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1033,8 +1040,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/java概述.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="java概述.html" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/java概述.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1246,8 +1252,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/java基本语法.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="java基本语法.html" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/java基本语法.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1413,7 +1418,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                <a href="/archives/">
               
                   <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
@@ -1675,11 +1680,12 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://huangxiang.disqus.com/count.js" async></script>
-    
 
-    
+
+
+
+
+
 
   
 
@@ -1692,10 +1698,27 @@
 
 
 
-
-
-
-
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'y7PBuIBhIF5ApPPAUXxihcw2-gzGzoHsz',
+        appKey: 'FS9Srq3mrEfXeDRnNoknXImD',
+        placeholder: '欢迎留下您宝贵的意见，一起交流',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
