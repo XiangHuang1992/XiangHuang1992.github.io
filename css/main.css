@@ -2024,7 +2024,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9fff71;
+  background: #46fffc;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3139,7 +3139,6 @@ hr {
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 .menu {
-  text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 5px;
