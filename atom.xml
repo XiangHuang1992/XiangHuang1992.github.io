@@ -499,9 +499,9 @@
       <category term="错误收集" scheme="http://www.huangxiang666.com/categories/%E9%94%99%E8%AF%AF%E6%94%B6%E9%9B%86/"/>
     
     
-      <category term="java" scheme="http://www.huangxiang666.com/tags/java/"/>
-    
       <category term="maven" scheme="http://www.huangxiang666.com/tags/maven/"/>
+    
+      <category term="java" scheme="http://www.huangxiang666.com/tags/java/"/>
     
   </entry>
   
