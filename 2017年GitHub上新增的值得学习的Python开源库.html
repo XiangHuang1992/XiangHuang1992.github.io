@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+  <link rel="manifest" href="/images/manifest.json">
+
+
+
+
+  <meta name="keywords" content="Python开源,Python入门,Python学习" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ferdinad_hx's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="开源项目对于我们在软件开发的过程中有着非常重大的作用，我们可以阅读学习开源项目的源码并在它的基础上建立我们自己的项目，通过他人造的轮子我们可以节省很多非常宝贵的时间并少走许多的弯路，所以对于开源项目的学习是很有必要的。">
+<meta name="keywords" content="Python开源,Python入门,Python学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2017年GitHub上新增的值得学习的Python开源库">
+<meta property="og:url" content="http://www.huangxiang666.com/2017年GitHub上新增的值得学习的Python开源库.html">
+<meta property="og:site_name" content="ferdinad_hx&#39;s Blog">
+<meta property="og:description" content="开源项目对于我们在软件开发的过程中有着非常重大的作用，我们可以阅读学习开源项目的源码并在它的基础上建立我们自己的项目，通过他人造的轮子我们可以节省很多非常宝贵的时间并少走许多的弯路，所以对于开源项目的学习是很有必要的。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-b35794355388dcba.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-66098f8cba2abc30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-f73f4b65f81026d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-fc5e138d5848d00e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-448295144b86427e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-da67e9542e1f1e76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-0757cd52048875eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-47342c6fc37a6972.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-60d55a3651c765cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-ede2f686da126831.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-1ae4f2bfdb97151d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-436b03cc65f8d2fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-2f32b27d9b5adcf9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-3faf76cd2f79b25d.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-2afdea7dac815891.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-fa08e41ec784afb9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-e090c2c8c7aab0c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-ebec228636097c06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-8edc38a404d97300.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/4892949-bf145b4f1c3cf6de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-01-26T15:51:46.141Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2017年GitHub上新增的值得学习的Python开源库">
+<meta name="twitter:description" content="开源项目对于我们在软件开发的过程中有着非常重大的作用，我们可以阅读学习开源项目的源码并在它的基础上建立我们自己的项目，通过他人造的轮子我们可以节省很多非常宝贵的时间并少走许多的弯路，所以对于开源项目的学习是很有必要的。">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/4892949-b35794355388dcba.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.huangxiang666.com/2017年GitHub上新增的值得学习的Python开源库.html"/>
+
+
+
+
+
+  <title>2017年GitHub上新增的值得学习的Python开源库 | ferdinad_hx's Blog</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c1aefede32e9fe7912e89f75c45017c9";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/xianghuang1992"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ferdinad_hx's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Get busy living, or get busy dying.</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.huangxiang666.com/2017年GitHub上新增的值得学习的Python开源库.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ferdinand_hx">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ferdinad_hx's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">2017年GitHub上新增的值得学习的Python开源库</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-26T23:49:25+08:00">
+                2018-01-26
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-01-26T23:51:46+08:00">
+                2018-01-26
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017年GitHub上新增的值得学习的Python开源库.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017年GitHub上新增的值得学习的Python开源库.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017年GitHub上新增的值得学习的Python开源库.html" class="leancloud_visitors" data-flag-title="2017年GitHub上新增的值得学习的Python开源库">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 本文总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,621
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  10
+                </span>
+              
+            </div>
+          
+
+          
+              <div class="post-description">
+                  <blockquote class="blockquote-center">开源项目对于我们在软件开发的过程中有着非常重大的作用，我们可以阅读学习开源项目的源码并在它的基础上建立我们自己的项目，通过他人造的轮子我们可以节省很多非常宝贵的时间并少走许多的弯路，所以对于开源项目的学习是很有必要的。</blockquote>
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://upload-images.jianshu.io/upload_images/4892949-b35794355388dcba.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="python开源.jpg"></p>
+<hr>
+<p>截止到目前为止，在GitHub上当我们以Python为关键字进行搜索时，发现有者60+W的相关搜索结果，近年来，Python越来越热门，在GitHub上的开源项目也井喷式的发展，那么在众多的开源项目中，哪些非常优秀的项目是非常值得我们去学习的呢？下面就为大家来介绍在GitHub上非常热门的开源项目。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4892949-66098f8cba2abc30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="github上Pythonp项目数量.png"></p>
+<h3 id="Home-Assistant"><a href="#Home-Assistant" class="headerlink" title="Home Assistant"></a>Home Assistant</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-f73f4b65f81026d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="home-siisistant简介.png"><br><img src="http://upload-images.jianshu.io/upload_images/4892949-fc5e138d5848d00e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="home-saaistant.png"><br>Home Assistant是一个开源的家庭智能控制系统，它有着非常友好的基于Web的可自定义UI，可以连接灯、开关、音响设备、安放设备等，可以集中管理并追踪他们的状态。可以在一个界面上控制来自于不同厂家的不同智能设备，并且这些行为都是可以自定义的，让智能化的家庭有着更多的可能性。目前在美国市场上的大多数智能设备都兼容HomeAssostant。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Github地址：https://github.com/home-assistant/home-assistant</span><br></pre></td></tr></table></figure>
+<h3 id="Pytorch"><a href="#Pytorch" class="headerlink" title="Pytorch"></a>Pytorch</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-448295144b86427e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="pytorch.png"></p>
+<p>Pytorch是Facebook针对机器学习和科学基础上发布的一个机器学习工具包，具有高度的灵活性，前身是使用lua语言编写的torch，主要提供了以下两个功能：</p>
+<ul>
+<li>具备强GPU加速的张力计算（比如numpy）。</li>
+<li>建立在基于磁带的自动调整基础上的深层神经网络。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Github地址：https://github.com/pytorch/pytorch</span><br></pre></td></tr></table></figure>
+<h3 id="Grumpy"><a href="#Grumpy" class="headerlink" title="Grumpy"></a>Grumpy</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-da67e9542e1f1e76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="grumpy.png"></p>
+<p>grumpy是Google开源的一个使用Go开发的Python运行时，它将Python代码编译成Go代码，然后将其编译成本地文件，而不是字节码文件，grumpy是没有虚拟机（vm）的。编译后的Go代码是对grumpy的一系列调用。在Google公司里，运行并维护着大量的Python代码，比如Youtube的前端服务器和API就大多是使用Python编写的，这种巨型应用需要大量的工作来优化它的运行时，而Cpython中，GLI的存在，制约来Python的并发能力。grumpy就由此应运而生了。感兴趣的朋友可以复制下面的github链接去详细了解一下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/google/grumpy</span><br></pre></td></tr></table></figure>
+<h3 id="Sanic"><a href="#Sanic" class="headerlink" title="Sanic"></a>Sanic</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-0757cd52048875eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sanic.png"></p>
+<p>sanic是一个基于Python 3.5+的一个web框架，与flask类似。特点就如上图中的“gotta to fast”说的那样，就是一个字：快。相对与flask，它使用async/await愈发编写，使用异步特性，所以它的速度有时非常明显，但由于它出现但时间还不够长，issues还不够多，所以建议新手刚上手Python的话，还是先使用flask，解决方案比较完善。但是sanic在可遇见的未来，必定会成为一个主流框架，有必要进行学习。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/channelcat/sanic</span><br></pre></td></tr></table></figure>
+<h3 id="Python-fire"><a href="#Python-fire" class="headerlink" title="Python-fire"></a>Python-fire</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-47342c6fc37a6972.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="python fire.png"></p>
+<p>python-fire是谷歌开源的一个能够将任何的python代码自动生成命令行界面（CLI）的一个工具。</p>
+<ul>
+<li>Python Fire是Python中创建CLI的一个非常简单的方法。</li>
+<li>Python Fire是开发和调试Python代码一个非常有用的工具。</li>
+<li>Python Fire有助于我们探索现有代码或者将其他人的代码转换成CLI。</li>
+<li>Python Fire使Bash和Dash之间的转换变得更加容易。</li>
+<li>Python Fire通过使用您需要导入和创建的的模版和变量设置REPL，使得Python REPL更加容易使用。</li>
+</ul>
+<p>通过使用这个开源库，不但可以生成CLI，并且可以用来调试我们的Python程序。更多的作用，可以自行去发掘。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/google/python-fire</span><br></pre></td></tr></table></figure>
+<h3 id="spaCy"><a href="#spaCy" class="headerlink" title="spaCy"></a>spaCy</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-60d55a3651c765cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="spacy.png"></p>
+<p>spacy是一个Python自然语言处理工具包。它建立于最新的研究基础之上，从诞生之初就用来解决实际问题，用于实际产品。spacy带有预先训练的统计模型和单词向量，目前支持20多种语言的标记，它具有世界上最快的句法分析器，用于标签的神经网络模型。如今人工智能概念非常火热，而自然语言的处理是人工智能的主要领域之一，而spacy是自然语言处理（NLP）中一个非常强大的工具包，所以对于想进入人工智能领域的童鞋们来说，这个开源库非常有必要学习。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/explosion/spaCy</span><br></pre></td></tr></table></figure>
+<h3 id="Pipenv"><a href="#Pipenv" class="headerlink" title="Pipenv"></a>Pipenv</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-ede2f686da126831.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="pipenv.png"></p>
+<p>pipenv是Python官方正式推荐的Python打包工具。它可以帮助我们在不建立虚拟环境的情况下非常方便的安装和管理依赖，为我们的项目自动的创建和管理一个虚拟环境。有了它之后：</p>
+<ul>
+<li>不需要再单独使用pip和virtualenv去创建虚拟环境，pipenv帮你创建，并且它们将一起工作。</li>
+<li>管理一个requirements.txt文件可能会产生问题，pipenv使用Pipfile和Pipfile.lock代替了requirements.txt，更加适用。</li>
+<li>使用hash，非常安全，可以自动曝光安全漏洞。</li>
+<li>让我们清晰明了的了解依赖图（$pipenv图）。</li>
+<li>通过加载.env文件简化开发流程。</li>
+</ul>
+<p>有了上述一大堆优点，还等什么？赶紧复制下方的链接开始宅起来学吧！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/pypa/pipenv</span><br></pre></td></tr></table></figure>
+<h3 id="MicroPython"><a href="#MicroPython" class="headerlink" title="MicroPython"></a>MicroPython</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-1ae4f2bfdb97151d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="micropyhon.jpg"></p>
+<p>micropython是微型控制器和受控制系统精简高效的Python实现。通过micropython，我们完全可以通过Python语言来实现对硬件底层的访问可控制，就如图片所示的一样。目前该项目还在测试阶段，完整的实现来Python3.4的语法。感兴趣的同学可以通过下面的链接去了解。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/micropython/micropython</span><br></pre></td></tr></table></figure>
+<h3 id="Prophet"><a href="#Prophet" class="headerlink" title="Prophet"></a>Prophet</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-436b03cc65f8d2fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="prophet.png"></p>
+<p>profhet是由Facebook Core Data Science team发布的开源软件，可以在CRAN和PYPI上下载。该框架可以使开发人员专注于金融策略模型、项目组合管理和分析上。对金融领域内的数据进行科学性的预测分析，对趋势、粒度等进行预测。profhet对于丢失的数据、趋势的转变、和大量的异常值具有强大的预测分析功能。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/facebook/prophet</span><br></pre></td></tr></table></figure>
+<h3 id="SerpentAI"><a href="#SerpentAI" class="headerlink" title="SerpentAI"></a>SerpentAI</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-2f32b27d9b5adcf9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="serpentAI.png"></p>
+<p>serpentAI是一个简单却又非常强大的开源软件，可以帮助开发人员创建游戏代理。将所有的游戏视频转换成适合实验的沙盒环境。该工具对机器学习和人工智能具有非常强大的作用。</p>
+<p>serpentAI有着大量的支持模块，为使用视频游戏的环境以及使用CLI加速开发时常见的开发场景提供解决方案。</p>
+<p>serpentAI的设计是完全基于插件的。可以方便共享给他人。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/SerpentAI/SerpentAI</span><br></pre></td></tr></table></figure>
+<h3 id="Dash"><a href="#Dash" class="headerlink" title="Dash"></a>Dash</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-3faf76cd2f79b25d.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="![dash-demo.gif](http://upload-images.jianshu.io/upload_images/4892949-c9d3d246f201f0fe.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+"></p>
+<p>在Dash的项目主页上，有一句这样的介绍：“Dash is a Python framework for building analytical web applications. No JavaScript required.”是plotly在GitHub发布的一个企业级解决方案和开源工具。它基于flask、plotly.js、React.js构建。通过它可以非常简单的构建一个强大的交互式仪表板。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/plotly/dash</span><br></pre></td></tr></table></figure>
+<h3 id="Apistar"><a href="#Apistar" class="headerlink" title="Apistar"></a>Apistar</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-2afdea7dac815891.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="apistar.gif"></p>
+<p>apistar是一个专门为Python3开发的一个web api框架：</p>
+<ul>
+<li>API文档——交互式API文档，始终与代码库保持同步。</li>
+<li>客户端库——由API Star生成的类型系统驱动的Javascript和Python客户端库。</li>
+<li>生成模式——支持生成Swagge或RAML API类型系统。</li>
+<li>表达式——类型注释视图，代码可测试。</li>
+<li>性能——确定如何运行每个视图的动态行为使得API Star非常的高效。</li>
+<li>吞吐量——支持asyncio，允许构建高吞吐量的非阻塞应用程序。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/encode/apistar</span><br></pre></td></tr></table></figure>
+<h3 id="Faiss"><a href="#Faiss" class="headerlink" title="Faiss"></a>Faiss</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-fa08e41ec784afb9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="faiss.png"></p>
+<p>faiss是密集向量的高效相似搜索和聚合类的库。它包含搜索任意大小的向量集的算法，还包含评估和参数调整的的支持代码。由Facebook开源。用于解决在用户日常搜索过程中所返回的网站拥有完全一样或者相似度过高的内容，应用类相似性搜索的相似引擎可以为用户返回最合适的结果，并且隐藏或者丢弃那些相同的结果。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/facebookresearch/faiss</span><br></pre></td></tr></table></figure>
+<h3 id="Better-exceptions"><a href="#Better-exceptions" class="headerlink" title="Better-exceptions"></a>Better-exceptions</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-e090c2c8c7aab0c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="better-exceoptions.png"></p>
+<p>Better-exceptions是GitHub上一个Python中自动提示异常的一个非常漂亮和有用的开源小工具。非常简单实用。如图所示，使用之后代码的错误提示是不是看起来非常漂亮呢？喜欢的话就赶紧复制下面的链接安装试试吧。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/Qix-/better-exceptions</span><br></pre></td></tr></table></figure>
+<h3 id="Flashtext"><a href="#Flashtext" class="headerlink" title="Flashtext"></a>Flashtext</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-ebec228636097c06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="flashtext.png"></p>
+<p>flashtext是一个基于FlashText算法，用于替换句子中的关键词或者从句子中提取关键字的一个开源库。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/vi3k6i5/flashtext</span><br></pre></td></tr></table></figure>
+<h3 id="Maya"><a href="#Maya" class="headerlink" title="Maya"></a>Maya</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-8edc38a404d97300.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="maya.jpeg"></p>
+<p>maya是一款Python的时间日期的开源库。在Python中，使用时间日期让人感到非常的沮丧，特别在处理不同操作系统上的不同环境语言的实惠。这个开源库就是为了解决这个问题。</p>
+<p>maya大多是围绕解析来自网站日期数据，所有时区代数在所有机器上的行为是相同的，不管系统区域设置如何。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/kennethreitz/maya</span><br></pre></td></tr></table></figure>
+<h3 id="Tangent"><a href="#Tangent" class="headerlink" title="Tangent"></a>Tangent</h3><p><img src="http://upload-images.jianshu.io/upload_images/4892949-bf145b4f1c3cf6de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="tagent.png"></p>
+<p>tangent是谷歌开源的一个免费的用于自动分化的Python库。现有的库通过跟踪程序的执行或者通过分段动态数据流图然后区分图来实现自动分化，而tangent在Python源代码本身上执行提前autodiff，并生成Python源代码作为其输出，正好填补来机器学习工具空间中的独特位置。</p>
+<p>tangent可以在Python庞大且不断增长的子集上工作，提供其他Python ML库没有的额外的autodiff特性，具有合理的性能，并且与TensorFlow和NumPy兼容。</p>
+<p>tangent当前还只是一个实验版本，还在持续构建开发当中。有兴趣的可以通过下方的链接进去学习并反馈意见。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GitHub地址：https://github.com/google/tangent</span><br></pre></td></tr></table></figure>
+<hr>
+<p>好了，关于Python 2017年值得关注和学习的开源库今天就给大家分享总结到这里。其实我只是在github上搜集了一部分，在github上还有许许多多的优秀库值得我们去学习和探索。最后，生命不止，编程不息！为自己加油。</p>
+<hr>
+<p>注明：本文首发于今日头【<a href="https://www.toutiao.com/i6513690243382641166/】。作者：新农民的编程生涯" target="_blank" rel="noopener">https://www.toutiao.com/i6513690243382641166/】。作者：新农民的编程生涯</a></p>
+
+      
+    </div>
+    
+    
+    
+    
+    
+         <div>
+             
+<div style="text-align:center;color: #ccc;font-size:14px;">
+    ------ 本文结束<i class="fa fa-paw"></i>感谢您的阅读 ------</div>
+
+
+        </div>
+      
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/wechat.JPG" alt="ferdinand_hx 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/alipay.JPG" alt="ferdinand_hx 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    ferdinand_hx
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://www.huangxiang666.com/2017年GitHub上新增的值得学习的Python开源库.html" title="2017年GitHub上新增的值得学习的Python开源库">http://www.huangxiang666.com/2017年GitHub上新增的值得学习的Python开源库.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+        <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+          
+        <a href="/tags/GitHub/" rel="tag"><i class="fa fa-tag"></i> GitHub</a>
+          
+        <a href="/tags/开源库/" rel="tag"><i class="fa fa-tag"></i> 开源库</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Python真的比其他语言慢吗.html" rel="next" title="Python真的比其他语言慢吗">
+                <i class="fa fa-chevron-left"></i> Python真的比其他语言慢吗
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.png"
+                alt="ferdinand_hx" />
+            
+              <p class="site-author-name" itemprop="name">ferdinand_hx</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">57</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/xianghuang1992" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://plus.google.com/" target="_blank" title="Google">
+                    
+                      <i class="fa fa-fw fa-google"></i>Google</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.facebook.com/ferdinandhx" target="_blank" title="FB Page">
+                    
+                      <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://instagram.com/lucashuang1992" target="_blank" title="Instagram">
+                    
+                      <i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Home-Assistant"><span class="nav-number">1.</span> <span class="nav-text">Home Assistant</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pytorch"><span class="nav-number">2.</span> <span class="nav-text">Pytorch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Grumpy"><span class="nav-number">3.</span> <span class="nav-text">Grumpy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sanic"><span class="nav-number">4.</span> <span class="nav-text">Sanic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-fire"><span class="nav-number">5.</span> <span class="nav-text">Python-fire</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#spaCy"><span class="nav-number">6.</span> <span class="nav-text">spaCy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pipenv"><span class="nav-number">7.</span> <span class="nav-text">Pipenv</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MicroPython"><span class="nav-number">8.</span> <span class="nav-text">MicroPython</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Prophet"><span class="nav-number">9.</span> <span class="nav-text">Prophet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SerpentAI"><span class="nav-number">10.</span> <span class="nav-text">SerpentAI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dash"><span class="nav-number">11.</span> <span class="nav-text">Dash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Apistar"><span class="nav-number">12.</span> <span class="nav-text">Apistar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Faiss"><span class="nav-number">13.</span> <span class="nav-text">Faiss</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Better-exceptions"><span class="nav-number">14.</span> <span class="nav-text">Better-exceptions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Flashtext"><span class="nav-number">15.</span> <span class="nav-text">Flashtext</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Maya"><span class="nav-number">16.</span> <span class="nav-text">Maya</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tangent"><span class="nav-number">17.</span> <span class="nav-text">Tangent</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2014 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ferdinand_hx</span>
+  <div class="powered-by"></div>
+  <span>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></span>
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">58.5k</span>
+  
+</div>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'y7PBuIBhIF5ApPPAUXxihcw2-gzGzoHsz',
+        appKey: 'FS9Srq3mrEfXeDRnNoknXImD',
+        placeholder: '欢迎留下您宝贵的意见，一起交流',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("y7PBuIBhIF5ApPPAUXxihcw2-gzGzoHsz", "FS9Srq3mrEfXeDRnNoknXImD");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>
