@@ -1271,6 +1271,16 @@ pre .javascript .function {
 .use-motion .collection-title {
   opacity: 0;
 }
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
+}
 .posts-expand {
   padding-top: 40px;
 }
@@ -1954,7 +1964,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #225e39;
+  background: #262bff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3258,4 +3268,11 @@ pre .javascript .function {
   .pagination {
     margin: 8px 0 0;
   }
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
