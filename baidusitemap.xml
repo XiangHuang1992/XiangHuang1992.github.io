@@ -128,11 +128,11 @@
         <title>Ubuntu下Apache2服务器的搭建</title>
         <pubTime>2017-02-28T08:21:02.000Z</pubTime>
         
+        <tag>ubuntu</tag>
+         
         <tag>Apache2</tag>
          
         <tag>服务器</tag>
-         
-        <tag>ubuntu</tag>
          
         <tag>linux</tag>
          
@@ -202,9 +202,9 @@
         <title>maven加入json-lib.jar报错Missing artifact net.sf.json-lib:json-lib:jar:2.4:compile</title>
         <pubTime>2015-12-06T01:20:11.000Z</pubTime>
         
-        <tag>java</tag>
-         
         <tag>maven</tag>
+         
+        <tag>java</tag>
          
          
            
@@ -336,9 +336,9 @@
         <title>Picasso学习笔记</title>
         <pubTime>2015-11-21T10:27:23.000Z</pubTime>
         
-        <tag>Picasso</tag>
-         
         <tag>android</tag>
+         
+        <tag>Picasso</tag>
          
         <tag>图片加载</tag>
          

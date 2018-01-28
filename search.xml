@@ -171,9 +171,9 @@
         <category>web</category>
       </categories>
       <tags>
+        <tag>ubuntu</tag>
         <tag>Apache2</tag>
         <tag>服务器</tag>
-        <tag>ubuntu</tag>
         <tag>linux</tag>
       </tags>
   </entry>
@@ -236,8 +236,8 @@
         <category>错误收集</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>maven</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>
@@ -289,8 +289,8 @@
         <category>android</category>
       </categories>
       <tags>
-        <tag>Picasso</tag>
         <tag>android</tag>
+        <tag>Picasso</tag>
         <tag>图片加载</tag>
       </tags>
   </entry>
