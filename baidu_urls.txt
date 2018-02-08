@@ -1,5 +1,5 @@
 http://www.huangxiang666.com/Python基础知识.html
-http://www.huangxiang666.com/Django系列教程（二）.html
-http://www.huangxiang666.com/Django系列教程（一）.html
 http://www.huangxiang666.com/2017年GitHub上新增的值得学习的Python开源库.html
 http://www.huangxiang666.com/Python真的比其他语言慢吗.html
+http://www.huangxiang666.com/在学习Python之前你必须知道的.html
+http://www.huangxiang666.com/程序员的职业生涯如何规划.html

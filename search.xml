@@ -13,22 +13,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Django系列教程（二）]]></title>
-    <url>%2FDjango%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89.html</url>
-    <content type="text"></content>
-      <categories>
-        <category>文章的分类</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[Django系列教程（一）]]></title>
-    <url>%2FDjango%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B%EF%BC%88%E4%B8%80%EF%BC%89.html</url>
-    <content type="text"></content>
-      <categories>
-        <category>文章的分类</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[2017年GitHub上新增的值得学习的Python开源库]]></title>
     <url>%2F2017%E5%B9%B4GitHub%E4%B8%8A%E6%96%B0%E5%A2%9E%E7%9A%84%E5%80%BC%E5%BE%97%E5%AD%A6%E4%B9%A0%E7%9A%84Python%E5%BC%80%E6%BA%90%E5%BA%93.html</url>
     <content type="text"><![CDATA[截止到目前为止，在GitHub上当我们以Python为关键字进行搜索时，发现有者60+W的相关搜索结果，近年来，Python越来越热门，在GitHub上的开源项目也井喷式的发展，那么在众多的开源项目中，哪些非常优秀的项目是非常值得我们去学习的呢？下面就为大家来介绍在GitHub上非常热门的开源项目。 Home AssistantHome Assistant是一个开源的家庭智能控制系统，它有着非常友好的基于Web的可自定义UI，可以连接灯、开关、音响设备、安放设备等，可以集中管理并追踪他们的状态。可以在一个界面上控制来自于不同厂家的不同智能设备，并且这些行为都是可以自定义的，让智能化的家庭有着更多的可能性。目前在美国市场上的大多数智能设备都兼容HomeAssostant。 1Github地址：https://github.com/home-assistant/home-assistant Pytorch Pytorch是Facebook针对机器学习和科学基础上发布的一个机器学习工具包，具有高度的灵活性，前身是使用lua语言编写的torch，主要提供了以下两个功能： 具备强GPU加速的张力计算（比如numpy）。 建立在基于磁带的自动调整基础上的深层神经网络。 1Github地址：https://github.com/pytorch/pytorch Grumpy grumpy是Google开源的一个使用Go开发的Python运行时，它将Python代码编译成Go代码，然后将其编译成本地文件，而不是字节码文件，grumpy是没有虚拟机（vm）的。编译后的Go代码是对grumpy的一系列调用。在Google公司里，运行并维护着大量的Python代码，比如Youtube的前端服务器和API就大多是使用Python编写的，这种巨型应用需要大量的工作来优化它的运行时，而Cpython中，GLI的存在，制约来Python的并发能力。grumpy就由此应运而生了。感兴趣的朋友可以复制下面的github链接去详细了解一下。 1GitHub地址：https://github.com/google/grumpy Sanic sanic是一个基于Python 3.5+的一个web框架，与flask类似。特点就如上图中的“gotta to fast”说的那样，就是一个字：快。相对与flask，它使用async/await愈发编写，使用异步特性，所以它的速度有时非常明显，但由于它出现但时间还不够长，issues还不够多，所以建议新手刚上手Python的话，还是先使用flask，解决方案比较完善。但是sanic在可遇见的未来，必定会成为一个主流框架，有必要进行学习。 1GitHub地址：https://github.com/channelcat/sanic Python-fire python-fire是谷歌开源的一个能够将任何的python代码自动生成命令行界面（CLI）的一个工具。 Python Fire是Python中创建CLI的一个非常简单的方法。 Python Fire是开发和调试Python代码一个非常有用的工具。 Python Fire有助于我们探索现有代码或者将其他人的代码转换成CLI。 Python Fire使Bash和Dash之间的转换变得更加容易。 Python Fire通过使用您需要导入和创建的的模版和变量设置REPL，使得Python REPL更加容易使用。 通过使用这个开源库，不但可以生成CLI，并且可以用来调试我们的Python程序。更多的作用，可以自行去发掘。 1GitHub地址：https://github.com/google/python-fire spaCy spacy是一个Python自然语言处理工具包。它建立于最新的研究基础之上，从诞生之初就用来解决实际问题，用于实际产品。spacy带有预先训练的统计模型和单词向量，目前支持20多种语言的标记，它具有世界上最快的句法分析器，用于标签的神经网络模型。如今人工智能概念非常火热，而自然语言的处理是人工智能的主要领域之一，而spacy是自然语言处理（NLP）中一个非常强大的工具包，所以对于想进入人工智能领域的童鞋们来说，这个开源库非常有必要学习。 1GitHub地址：https://github.com/explosion/spaCy Pipenv pipenv是Python官方正式推荐的Python打包工具。它可以帮助我们在不建立虚拟环境的情况下非常方便的安装和管理依赖，为我们的项目自动的创建和管理一个虚拟环境。有了它之后： 不需要再单独使用pip和virtualenv去创建虚拟环境，pipenv帮你创建，并且它们将一起工作。 管理一个requirements.txt文件可能会产生问题，pipenv使用Pipfile和Pipfile.lock代替了requirements.txt，更加适用。 使用hash，非常安全，可以自动曝光安全漏洞。 让我们清晰明了的了解依赖图（$pipenv图）。 通过加载.env文件简化开发流程。 有了上述一大堆优点，还等什么？赶紧复制下方的链接开始宅起来学吧！ 1GitHub地址：https://github.com/pypa/pipenv MicroPython micropython是微型控制器和受控制系统精简高效的Python实现。通过micropython，我们完全可以通过Python语言来实现对硬件底层的访问可控制，就如图片所示的一样。目前该项目还在测试阶段，完整的实现来Python3.4的语法。感兴趣的同学可以通过下面的链接去了解。 1GitHub地址：https://github.com/micropython/micropython Prophet profhet是由Facebook Core Data Science team发布的开源软件，可以在CRAN和PYPI上下载。该框架可以使开发人员专注于金融策略模型、项目组合管理和分析上。对金融领域内的数据进行科学性的预测分析，对趋势、粒度等进行预测。profhet对于丢失的数据、趋势的转变、和大量的异常值具有强大的预测分析功能。 1GitHub地址：https://github.com/facebook/prophet SerpentAI serpentAI是一个简单却又非常强大的开源软件，可以帮助开发人员创建游戏代理。将所有的游戏视频转换成适合实验的沙盒环境。该工具对机器学习和人工智能具有非常强大的作用。 serpentAI有着大量的支持模块，为使用视频游戏的环境以及使用CLI加速开发时常见的开发场景提供解决方案。 serpentAI的设计是完全基于插件的。可以方便共享给他人。 1GitHub地址：https://github.com/SerpentAI/SerpentAI Dash 在Dash的项目主页上，有一句这样的介绍：“Dash is a Python framework for building analytical web applications. No JavaScript required.”是plotly在GitHub发布的一个企业级解决方案和开源工具。它基于flask、plotly.js、React.js构建。通过它可以非常简单的构建一个强大的交互式仪表板。 1GitHub地址：https://github.com/plotly/dash Apistar apistar是一个专门为Python3开发的一个web api框架： API文档——交互式API文档，始终与代码库保持同步。 客户端库——由API Star生成的类型系统驱动的Javascript和Python客户端库。 生成模式——支持生成Swagge或RAML API类型系统。 表达式——类型注释视图，代码可测试。 性能——确定如何运行每个视图的动态行为使得API Star非常的高效。 吞吐量——支持asyncio，允许构建高吞吐量的非阻塞应用程序。 1GitHub地址：https://github.com/encode/apistar Faiss faiss是密集向量的高效相似搜索和聚合类的库。它包含搜索任意大小的向量集的算法，还包含评估和参数调整的的支持代码。由Facebook开源。用于解决在用户日常搜索过程中所返回的网站拥有完全一样或者相似度过高的内容，应用类相似性搜索的相似引擎可以为用户返回最合适的结果，并且隐藏或者丢弃那些相同的结果。 1GitHub地址：https://github.com/facebookresearch/faiss Better-exceptions Better-exceptions是GitHub上一个Python中自动提示异常的一个非常漂亮和有用的开源小工具。非常简单实用。如图所示，使用之后代码的错误提示是不是看起来非常漂亮呢？喜欢的话就赶紧复制下面的链接安装试试吧。 1GitHub地址：https://github.com/Qix-/better-exceptions Flashtext flashtext是一个基于FlashText算法，用于替换句子中的关键词或者从句子中提取关键字的一个开源库。 1GitHub地址：https://github.com/vi3k6i5/flashtext Maya maya是一款Python的时间日期的开源库。在Python中，使用时间日期让人感到非常的沮丧，特别在处理不同操作系统上的不同环境语言的实惠。这个开源库就是为了解决这个问题。 maya大多是围绕解析来自网站日期数据，所有时区代数在所有机器上的行为是相同的，不管系统区域设置如何。 1GitHub地址：https://github.com/kennethreitz/maya Tangent tangent是谷歌开源的一个免费的用于自动分化的Python库。现有的库通过跟踪程序的执行或者通过分段动态数据流图然后区分图来实现自动分化，而tangent在Python源代码本身上执行提前autodiff，并生成Python源代码作为其输出，正好填补来机器学习工具空间中的独特位置。 tangent可以在Python庞大且不断增长的子集上工作，提供其他Python ML库没有的额外的autodiff特性，具有合理的性能，并且与TensorFlow和NumPy兼容。 tangent当前还只是一个实验版本，还在持续构建开发当中。有兴趣的可以通过下方的链接进去学习并反馈意见。 1GitHub地址：https://github.com/google/tangent 好了，关于Python 2017年值得关注和学习的开源库今天就给大家分享总结到这里。其实我只是在github上搜集了一部分，在github上还有许许多多的优秀库值得我们去学习和探索。最后，生命不止，编程不息！为自己加油。 注明：本文首发于今日头【https://www.toutiao.com/i6513690243382641166/】。作者：新农民的编程生涯]]></content>
@@ -199,9 +183,9 @@
         <category>web</category>
       </categories>
       <tags>
-        <tag>ubuntu</tag>
         <tag>Apache2</tag>
         <tag>服务器</tag>
+        <tag>ubuntu</tag>
         <tag>linux</tag>
       </tags>
   </entry>
@@ -264,8 +248,8 @@
         <category>错误收集</category>
       </categories>
       <tags>
-        <tag>maven</tag>
         <tag>java</tag>
+        <tag>maven</tag>
       </tags>
   </entry>
   <entry>
